@@ -1,46 +1,9 @@
-// import Stripe from 'stripe';
-import User from '../models/user.model.js';import mongoose from 'mongoose';
+import Stripe from 'stripe';
+import mongoose from 'mongoose';
+import User from '../models/user.model.js';
+import Payment from '../models/payment.model.js'; // You should export this from your schema file
 
-const paymentSchema = new mongoose.Schema({
-  userId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true,
-  },
-  amount: {
-    type: Number,
-    required: true,
-  },
-  currency: {
-    type: String,
-    default: 'LKR', // or 'INR' or 'USD' depending on your region
-  },
-  status: {
-    type: String,
-    enum: ['pending', 'success', 'failed'],
-    default: 'pending',
-  },
-  provider: {
-    type: String,
-    enum: ['stripe', 'razorpay'],
-    required: true,
-  },
-  paymentIntentId: {
-    type: String, // For Stripe
-  },
-  razorpayPaymentId: {
-    type: String, // For Razorpay
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-});
-
-export default mongoose.model('Payment', paymentSchema);
-
-
-// const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // ✅ Create Payment Session
 export const initiatePayment = async (req, res) => {
@@ -63,13 +26,23 @@ export const initiatePayment = async (req, res) => {
       }
     });
 
+    // Optional: Save pending payment in DB
+    await Payment.create({
+      userId: req.user.id,
+      amount: 500,
+      currency: 'usd',
+      provider: 'stripe',
+      paymentIntentId: session.id,
+      status: 'pending'
+    });
+
     res.status(200).json({ url: session.url });
   } catch (err) {
     res.status(500).json({ msg: 'Payment initiation failed', error: err.message });
   }
 };
 
-// ✅ Stripe Webhook to confirm payment
+// ✅ Stripe Webhook
 export const stripeWebhook = async (req, res) => {
   const sig = req.headers['stripe-signature'];
   let event;
@@ -84,11 +57,17 @@ export const stripeWebhook = async (req, res) => {
     return res.status(400).send(`Webhook Error: ${err.message}`);
   }
 
-  // 🎯 Handle payment success
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
     const userId = session.metadata.userId;
 
+    // ✅ Update payment record
+    await Payment.findOneAndUpdate(
+      { paymentIntentId: session.id },
+      { status: 'success' }
+    );
+
+    // ✅ Update user subscription status
     const user = await User.findById(userId);
     if (user) {
       user.subscriptionStatus = 'paid';
