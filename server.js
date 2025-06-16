@@ -1,34 +1,41 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import cors from 'cors';
-import authRoutes from './routes/authRoutes.js';
+import mongoose from 'mongoose';
 
+import authRoutes from './routes/auth.routes.js'; 
+import userRoutes from './routes/userRoutes.js';
+import studentRoutes from './routes/student.routes.js';
+import chapterRoutes from './routes/chapter.routes.js';
+import questionRoutes from './routes/question.routes.js';
+import subscriptionRoutes from './routes/subscription.routes.js';
+import paymentRoutes from './routes/payment.routes.js';
 
 dotenv.config();
 
 const app = express();
-
-// Middleware
-app.use(cors());
 app.use(express.json());
 
-// Routes
+// ✅ Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/students', studentRoutes);
+app.use('/api/chapters', chapterRoutes);
+app.use('/api/questions', questionRoutes);
+app.use('/api/subscription', subscriptionRoutes);
+app.use('/api/payment', paymentRoutes);
 
-
-// MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
+// ✅ Connect to MongoDB first, then start the server
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
   .then(() => {
-    console.log('✅ MongoDB Connected Successfully');
-    app.listen(process.env.PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${process.env.PORT}`);
+    console.log('✅ MongoDB Connected');
+    app.listen(5000, () => {
+      console.log('🚀 Server running on http://localhost:5000');
     });
   })
   .catch((err) => {
-    console.error('❌ MongoDB connection failed:', err.message);
-    process.exit(1); // Optional: Stop the app if DB fails
+    console.error('❌ Database connection error:', err.message);
+    process.exit(1);
   });
