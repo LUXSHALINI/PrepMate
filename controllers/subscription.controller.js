@@ -1,11 +1,11 @@
 import User from '../models/user.model.js';
-// import dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 
 // ✅ Start Free Trial
 export const startTrial = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id);
+    const user = await User.findById(req.user.userId);
     if (!user) return res.status(404).json({ msg: 'User not found' });
 
     if (user.trialStartDate)
@@ -24,7 +24,7 @@ export const startTrial = async (req, res) => {
 // ✅ Check Subscription Status
 export const checkSubscription = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id);
+    const user = await User.findById(req.user.userId);
     if (!user) return res.status(404).json({ msg: 'User not found' });
 
     const startDate = dayjs(user.trialStartDate);
