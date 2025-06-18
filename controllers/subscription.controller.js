@@ -2,7 +2,7 @@ import User from '../models/user.model.js';
 import dayjs from 'dayjs';
 
 
-// ✅ Start Free Trial
+// Start Free Trial
 export const startTrial = async (req, res) => {
   try {
     const user = await User.findById(req.user.userId);
@@ -21,7 +21,7 @@ export const startTrial = async (req, res) => {
   }
 };
 
-// ✅ Check Subscription Status
+//  Check Subscription Status
 export const checkSubscription = async (req, res) => {
   try {
     const user = await User.findById(req.user.userId);

@@ -1,6 +1,6 @@
 import User from '../models/user.model.js';
 
-// ✅ Save Student Info (called after student submits exam marks and preferences)
+// Save Student Info (called after student submits exam marks and preferences)
 export const saveStudentInfo = async (req, res) => {
   try {
     const {
@@ -15,7 +15,7 @@ export const saveStudentInfo = async (req, res) => {
     const userId = req.user?.id; // req.user is set by auth middleware
     if (!userId) return res.status(401).json({ msg: 'Unauthorized access' });
 
-    // 🎯 Calculate subject levels based on marks
+    // Calculate subject levels based on marks
     const subjectLevels = {};
     for (const [subject, score] of Object.entries(marks)) {
       if (score < 50) subjectLevels[subject] = 'weak';
@@ -23,7 +23,7 @@ export const saveStudentInfo = async (req, res) => {
       else subjectLevels[subject] = 'strong';
     }
 
-    // 🧑‍🎓 Find and update the user
+    // Find and update the user
     const user = await User.findById(userId);
     if (!user) return res.status(404).json({ msg: 'User not found' });
 
@@ -47,7 +47,7 @@ export const saveStudentInfo = async (req, res) => {
   }
 };
 
-// ✅ Get Student Info (for profile page or dashboard display)
+//  Get Student Info (for profile page or dashboard display)
 export const getStudentInfo = async (req, res) => {
   try {
     const userId = req.params.id;

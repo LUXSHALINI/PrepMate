@@ -1,6 +1,6 @@
 import Question from '../models/question.model.js';
 
-// 🔹 Get all questions (for students)
+//  Get all questions (for students)
 export const getAllQuestions = async (req, res) => {
   try {
     const questions = await Question.find();
@@ -10,7 +10,7 @@ export const getAllQuestions = async (req, res) => {
   }
 };
 
-// 🔹 Get a question by ID
+//  Get a question by ID
 export const getQuestionById = async (req, res) => {
   try {
     const question = await Question.findById(req.params.id);
@@ -21,7 +21,7 @@ export const getQuestionById = async (req, res) => {
   }
 };
 
-// 🔹 Add a new question (Admin only)
+//  Add a new question (Admin only)
 export const addQuestion = async (req, res) => {
   try {
     const { subject, chapter, questionText, options, correctAnswer, explanation, difficulty } = req.body;

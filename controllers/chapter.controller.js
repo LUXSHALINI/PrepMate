@@ -1,6 +1,6 @@
 import Chapter from '../models/chapter.model.js';
 
-// ✅ GET /api/chapters - Public
+//  GET /api/chapters - Public
 export const getAllChapters = async (req, res) => {
   try {
     const chapters = await Chapter.find();
@@ -10,7 +10,7 @@ export const getAllChapters = async (req, res) => {
   }
 };
 
-// ✅ GET /api/chapters/:id - Public
+// GET /api/chapters/:id - Public
 export const getChapterById = async (req, res) => {
   try {
     const chapter = await Chapter.findById(req.params.id);
@@ -21,7 +21,7 @@ export const getChapterById = async (req, res) => {
   }
 };
 
-// ✅ POST /api/chapters - Admin
+// POST /api/chapters - Admin
 export const addChapter = async (req, res) => {
   try {
     const { subject, chapterName, description } = req.body;

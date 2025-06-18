@@ -61,13 +61,13 @@ export const stripeWebhook = async (req, res) => {
     const session = event.data.object;
     const userId = session.metadata.userId;
 
-    // ✅ Update payment record
+    //  Update payment record
     await Payment.findOneAndUpdate(
       { paymentIntentId: session.id },
       { status: 'success' }
     );
 
-    // ✅ Update user subscription status
+    // Update user subscription status
     const user = await User.findById(userId);
     if (user) {
       user.subscriptionStatus = 'paid';
