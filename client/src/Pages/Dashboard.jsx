@@ -50,12 +50,11 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* Performance Chart */}
-      <div className="mt-10 mx-6">
-        <PerformanceChart />
-      </div>
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+  <PerformanceChart />
+</div>
 
-      {/* ✅ Quick Actions */}
+      {/*  Quick Actions */}
       <QuickActions />
     </div>
   );
