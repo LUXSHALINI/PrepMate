@@ -23,7 +23,6 @@ const Header = () => {
         <Link to="/login" className="text-teal-700 hover:underline">Sign In</Link>
         <Link to="/register" className="text-teal-700 hover:underline">Register</Link>
 
-        {/* Show Admin button only if user is admin */}
         {user?.role === 'admin' && (
           <Link
             to="/admin/students"
