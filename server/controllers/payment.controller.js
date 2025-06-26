@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import User from '../models/user.model.js';
 import Payment from '../models/payment.model.js'; // You should export this from your schema file
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe =new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // ✅ Create Payment Session
 export const initiatePayment = async (req, res) => {
