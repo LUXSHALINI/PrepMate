@@ -1,51 +1,27 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
-const Register = () => {
+const StudentRegister = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-    role: 'student', // default role
+    age: '',
+    school: '',
+    phone: '',
   });
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // ✅ Hook for redirect
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
-      return;
-    }
+    console.log('Register Data:', formData);
 
-    try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', {
-        name: formData.name,
-        email: formData.email,
-        password: formData.password,
-        role: formData.role,
-      });
-
-      if (res.status === 201) {
-        alert('Registration successful!');
-        navigate('/trial-success');
-      }
-    } catch (err) {
-      console.error('Axios Error:', err);
-
-      if (err.response && err.response.data && err.response.data.error) {
-        alert(err.response.data.error);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    }
+    // ✅ After successful registration, redirect to trial success
+    navigate('/trial-success');
   };
 
   return (
@@ -77,59 +53,41 @@ const Register = () => {
               required
             />
           </div>
-
           <div>
-            <label className="block mb-1 text-sm font-semibold text-gray-700">Email Address</label>
+            <label className="block mb-1 text-sm font-semibold text-gray-700">Age</label>
             <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
+              type="number"
+              name="age"
+              placeholder="Your age"
+              value={formData.age}
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B8C82]"
               required
             />
           </div>
-
           <div>
-            <label className="block mb-1 text-sm font-semibold text-gray-700">Password</label>
+            <label className="block mb-1 text-sm font-semibold text-gray-700">School Name</label>
             <input
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              value={formData.password}
+              type="text"
+              name="school"
+              placeholder="Enter your school name"
+              value={formData.school}
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B8C82]"
               required
-              minLength={6}
             />
           </div>
-
           <div>
-            <label className="block mb-1 text-sm font-semibold text-gray-700">Confirm Password</label>
+            <label className="block mb-1 text-sm font-semibold text-gray-700">Phone Number</label>
             <input
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm your password"
-              value={formData.confirmPassword}
+              type="tel"
+              name="phone"
+              placeholder="07X-XXXXXXX"
+              value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B8C82]"
               required
-              minLength={6}
             />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-sm font-semibold text-gray-700">Role</label>
-            <select
-              name="role"
-              value={formData.role}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2B8C82]"
-            >
-              <option value="student">Student</option>
-              <option value="admin">Admin</option>
-            </select>
           </div>
 
           <button
@@ -148,4 +106,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default StudentRegister;

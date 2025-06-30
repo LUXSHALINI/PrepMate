@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import FeatureGrid from '../components/FeatureGrid';
+import homeImage from '../assets/Home.jpeg'; 
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,9 +32,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl h-64 md:h-80 shadow-xl flex items-center justify-center">
-          <span className="text-teal-700 font-bold text-xl">[Image/Animation]</span>
-        </div>
+        <div className="bg-white rounded-2xl h-64 md:h-80 shadow-xl flex items-center justify-center overflow-hidden">
+        <img src="./src/assets/Home.png" alt="Home" 
+    className="h-full object-cover rounded-2xl"
+  />
+</div>
+
       </div>
 
       {/* Feature Section */}

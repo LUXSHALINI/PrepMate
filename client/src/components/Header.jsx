@@ -22,6 +22,7 @@ const Header = () => {
       <nav className="space-x-4 flex items-center">
         <Link to="/login" className="text-teal-700 hover:underline">Sign In</Link>
         <Link to="/register" className="text-teal-700 hover:underline">Register</Link>
+        <Link to="/admindashboard" className="text-teal-700 hover:underline">Admin</Link>
 
         {user?.role === 'admin' && (
           <Link

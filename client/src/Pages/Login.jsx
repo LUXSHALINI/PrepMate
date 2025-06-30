@@ -1,17 +1,43 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const navigate = useNavigate(); // ✅ init navigate
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Login data:', formData);
-  };
+    try {
+      console.log('Sending login:', formData);
+      const res = await axios.post('http://localhost:5000/api/auth/login', formData, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+  
+      const data = res.data;
+      console.log(data);
+      console.log('Login request body:', res.body);
 
+      alert('Login successful!');
+      if (data.user.role === 'admin') {
+        navigate('/admindashboard');
+      } else {
+        navigate('/dashboard');
+      }
+  
+    } catch (err) {
+      console.error('Login Error:', err);
+      alert(err.response?.data?.error || err.message || 'Something went wrong');
+    }
+  };
+  
+  
   return (
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center"
@@ -20,7 +46,9 @@ const Login = () => {
       <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl w-full max-w-sm text-center">
         <div className="mb-4 text-3xl">🔐</div>
         <h2 className="text-xl font-semibold mb-2">Sign in with email</h2>
-        <p className="text-gray-600 mb-6 text-sm">Make a new doc to bring your words, data and team together. For 15 days free.</p>
+        <p className="text-gray-600 mb-6 text-sm">
+          Make a new doc to bring your words, data and team together. For 15 days free.
+        </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
           <div>
