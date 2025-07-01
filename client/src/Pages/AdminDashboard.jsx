@@ -8,16 +8,20 @@ import ManageQuestions from './ManageQuestions';
 import PerformancDashboard from './PerformanceDashboard'
 import PerformanceMonitoring from '../components/PerformanceMonitoring';
 
-// import { fetchStudents } from '../api/adminApi'; // Uncomment if using
+
 
 const AdminDashboard = () => {
   const [students, setStudents] = useState([]);
 
-  // Dummy fetchStudents for now (you should replace it with actual API call)
+
   const fetchStudents = async () => {
     return [
-      { name: 'John Doe', email: 'john@example.com', school: 'ABC School', progress: 'Medium' },
-      { name: 'Jane Smith', email: 'jane@example.com', school: 'XYZ School', progress: 'Strong' },
+      { name: 'Shalini', email: 'shalini@example.com', school: 'ABC School', progress: 'Medium' },
+      { name: 'Kala', email: 'Kala@example.com', school: 'XYZ School', progress: 'Strong' },
+      { name: 'Mala', email: 'Mala@example.com', school: 'XYZ School', progress: 'Strong' },
+      { name: 'Dushy', email: 'Dushy@example.com', school: 'XYZ School', progress: 'Strong' },
+      { name: 'Jalani', email: 'Jalani@example.com', school: 'XYZ School', progress: 'Strong' },
+    
     ];
   };
 

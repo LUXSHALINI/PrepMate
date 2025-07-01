@@ -8,16 +8,16 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-teal-700 text-white font-sans">
     
-
-      {/* Trial Notice */}
-      <div className="bg-gray-200 text-black rounded-xl mx-6 mt-6 p-4 shadow">
+ 
+    
+      {/* <div className="bg-gray-200 text-black rounded-xl mx-6 mt-6 p-4 shadow">
         <p className="text-sm font-medium">
           Trial Period Active – Your free trial ends in <span className="text-red-600 font-bold">14 days</span>.
           <button className="ml-4 bg-white text-teal-700 px-3 py-1 rounded-full font-semibold shadow hover:bg-gray-100">
             View Plans
           </button>
         </p>
-      </div>
+      </div>  */}
 
       {/* Welcome Message */}
       <div className="mt-8 px-6">
@@ -26,7 +26,7 @@ const Dashboard = () => {
       </div>
 
       {/* Learning Journey Card */}
-      <div className="bg-white text-black rounded-xl mx-6 p-6 shadow-md">
+      {/* <div className="bg-white text-black rounded-xl mx-6 p-6 shadow-md">
         <h3 className="text-lg font-bold mb-2">Your Learning Journey</h3>
         <p className="text-sm text-gray-600 mb-4">Track your overall progress and stay motivated.</p>
 
@@ -50,11 +50,9 @@ const Dashboard = () => {
         </p>
       </div>
 
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-gray-100"> */}
   <PerformanceChart />
-</div>
-
-      {/*  Quick Actions */}
+{/* </div> */}
       <QuickActions />
     </div>
   );

@@ -1,38 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Header = () => {
-  // Get user info from localStorage (if logged in)
   const user = JSON.parse(localStorage.getItem('user'));
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-white text-black rounded-lg shadow-md">
-      {/* Left side: Logo + App Name */}
+    <header className="flex justify-between items-center px-4 py-3 bg-teal-800 rounded-lg shadow-md">
+
+      {/* Logo + App Name */}
       <div className="flex items-center space-x-3">
-        <img src="./src/assets/logo.png" alt="PrepMate Logo" className="w-10 h-10 rounded-full" />
-        <h1 className="text-2xl font-bold">
+        <img src="./src/assets/logo.png" alt="PrepMate Logo" className="w-8 h-8 rounded-full" />
+        <h1 className="text-2xl font-extrabold tracking-wide" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}>
           <span style={{ color: "#52DAE4" }}>P</span>
           <span style={{ color: "#6AF1ED" }}>rep</span>
-          <span style={{ color: "#2A6B67" }}>Mat</span>
-          <span style={{ color: "#103156" }}>e</span>
+          <span style={{ color: "#40BDAF" }}>Mat</span>
+          <span style={{ color: "#72C4FF" }}>e</span>
         </h1>
       </div>
 
-      {/* Right side: Navigation */}
-      <nav className="space-x-4 flex items-center">
-        <Link to="/login" className="text-teal-700 hover:underline">Sign In</Link>
-        <Link to="/register" className="text-teal-700 hover:underline">Register</Link>
-        <Link to="/admindashboard" className="text-teal-700 hover:underline">Admin</Link>
-
-        {user?.role === 'admin' && (
-          <Link
-            to="/admin/students"
-            className="bg-teal-700 text-white px-4 py-2 rounded-full font-semibold hover:bg-teal-800 shadow"
-          >
-            Admin Dashboard
-          </Link>
-        )}
+      {/* Navigation */}
+      <nav className="space-x-3 flex items-center text-sm">
+        <Link to="/home" className="text-white hover:underline">Home</Link>
+        <Link to="/features" className="text-white hover:underline">Features</Link>
+        <Link to="/testimonials" className="text-white hover:underline">Testimonials</Link>
+        <Link to="/pricing" className="text-white hover:underline">Pricing</Link>
+        <Link to="/about" className="text-white hover:underline">About</Link>
+        <Link to="/login" className="text-white hover:underline">Sign In</Link>
       </nav>
+
+     
     </header>
   );
 };

@@ -29,27 +29,30 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <section className="bg-teal-700 text-white px-6 py-20">
+    <section className="bg-white text-teal-900 px-6 py-20">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">Why Choose PrepMate?</h2>
-        <p className="text-base text-teal-100 mb-12">
+        <p className="text-sans text-teal-800 mb-12">
           Our platform is designed to adapt to your unique learning style and pace.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {features.map((feature, i) => (
-            <div
-              key={i}
-              className="bg-white text-teal-700 rounded-xl p-6 shadow-lg transition hover:scale-105"
-            >
-              <div className="h-12 w-12 bg-teal-100 rounded-full flex items-center justify-center mb-4 text-xl font-bold">
-                ✓
-              </div>
-              <h4 className="font-semibold mb-2">{feature.title}</h4>
-              <p className="text-sm text-teal-600">{feature.desc}</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  {features.map((feature, i) => (
+    <div
+      key={i}
+      className="bg-white text-teal-700 rounded-xl p-4 shadow-md transition-transform hover:scale-105 max-w-xs mx-auto
+                 flex flex-col items-start justify-start h-48"
+    >
+      <div className="h-10 w-10 bg-teal-100 rounded-full flex items-center justify-center mb-3 text-lg font-semibold">
+        ✓
+      </div>
+      <h4 className="font-semibold mb-1 text-base">{feature.title}</h4>
+      <p className="text-xs text-teal-600 flex-grow">{feature.desc}</p>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </section>
   );
