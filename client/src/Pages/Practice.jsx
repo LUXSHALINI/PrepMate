@@ -234,7 +234,7 @@ const Practice = () => {
           <Progress value={progress} className="h-2 bg-white/20" />
         </div>
 
-        {/* Question Card */}
+      
         <div className="max-w-4xl mx-auto">
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <CardHeader>
