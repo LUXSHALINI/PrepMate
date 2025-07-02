@@ -8,7 +8,7 @@ const Register = () => {
     email: '',
     password: '',
     confirmPassword: '',
-    role: 'student', // default role
+    role: 'student', 
   });
 
   const navigate = useNavigate();
