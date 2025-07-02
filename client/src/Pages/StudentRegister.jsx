@@ -9,7 +9,7 @@ const StudentRegister = () => {
     phone: '',
   });
 
-  const navigate = useNavigate(); // ✅ Hook for redirect
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
