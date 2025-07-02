@@ -48,7 +48,7 @@ const PerformanceDashboard = () => {
     <div style={{ padding: '1rem', maxWidth: '900px', margin: '0 auto' }}>
       <h1 style={{ marginBottom: '1rem' }}>📊 Performance Monitoring</h1>
 
-      {/* Student Progress Table */}
+     
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ marginBottom: '0.5rem' }}>Student Progress</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
