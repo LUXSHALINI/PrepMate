@@ -55,7 +55,7 @@ const Home = () => {
       <Footer/>
     
 
-      {/* CTA Section */}
+    
       <div className="text-center mt-16 mb-12">
         <h3 className="text-3xl font-semibold mb-4">Ready to Elevate Your Learning?</h3>
         <p className="mb-6 text-white/90 max-w-xl mx-auto">
