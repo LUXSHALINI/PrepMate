@@ -52,7 +52,6 @@ const ExperiencePrepMate = () => {
           ))}
         </div>
 
-        {/* Right - Image */}
         <div className="flex justify-center">
           <img
             src={experienceImg}
