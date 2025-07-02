@@ -1,4 +1,4 @@
-// src/components/StudentCard.jsx
+
 import React from 'react';
 
 const StudentCard = ({ student, onToggleStatus, onNotify }) => {
