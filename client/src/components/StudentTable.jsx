@@ -3,7 +3,7 @@ import React from 'react';
 const StudentTable = ({ students }) => {
   const handleToggleStatus = (id) => {
     alert(`Toggle status for student ID: ${id}`);
-    // TODO: Send API request to toggle activation status
+   
   };
 
   const handleNotify = (id) => {
