@@ -13,7 +13,7 @@ const PerformanceDashboard = () => {
         setLoading(true);
  
         const studentsRes = await axios.get('/api/performance/students-progress');
-        // Fetch practice stats data
+        
         const statsRes = await axios.get('/api/performance/practice-stats');
 
         setStudents(studentsRes.data);
