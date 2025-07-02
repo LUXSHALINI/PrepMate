@@ -8,7 +8,7 @@ const StudentTable = ({ students }) => {
 
   const handleNotify = (id) => {
     alert(`Send notification to student ID: ${id}`);
-    // TODO: Send notification to backend
+
   };
 
   return (
