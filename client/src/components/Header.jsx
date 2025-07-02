@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center px-4 py-3 bg-teal-800 rounded-lg shadow-md">
 
-      {/* Logo + App Name */}
+    
       <div className="flex items-center space-x-3">
         <img src="./src/assets/logo.png" alt="PrepMate Logo" className="w-8 h-8 rounded-full" />
         <h1 className="text-2xl font-extrabold tracking-wide" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}>
