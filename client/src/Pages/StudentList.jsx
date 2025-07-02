@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import AdminNavbar from '../components/AdminNavbar';
+
 import StudentCard from '../components/StudentCard';
 
 const StudentList = () => {
@@ -10,7 +10,7 @@ const StudentList = () => {
     
     setStudents([
       { id: 1, name: 'Luxshalini', school: 'XYZ School', level: 'Medium', subjects: ['Maths', 'Science'], active: true },
-      { id: 2, name: 'Ram', school: 'ABC College', level: 'Weak', subjects: ['English'], active: false },
+      { id: 2, name: 'Mala', school: 'ABC College', level: 'Weak', subjects: ['English'], active: false },
     ]);
   }, []);
 

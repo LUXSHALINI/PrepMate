@@ -27,6 +27,7 @@ const Header = () => {
         <Link to="/pricing" className="text-white hover:underline">Pricing</Link>
         <Link to="/about" className="text-white hover:underline">About</Link>
         <Link to="/login" className="text-white hover:underline">Sign In</Link>
+
       </nav>
 
      
