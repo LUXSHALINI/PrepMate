@@ -71,7 +71,7 @@ const Practice = () => {
 
   const filteredQuestions = sampleQuestions.filter((q) => q.subject === selectedSubject)
 
-  // Timer effect
+  
   useEffect(() => {
     if (sessionStarted && timeLeft > 0 && !sessionComplete) {
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000)
