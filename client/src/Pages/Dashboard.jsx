@@ -144,14 +144,14 @@ export default function Dashboard() {
                 </CardHeader>
                 <CardContent>
               
-              
+
                 </CardContent>
               </Card>
             </div>
           </TabsContent>
         </Tabs>
 
-        {/* Quick Actions */}
+    
         <QuickActions />
       </div>
     </div>
