@@ -1,4 +1,4 @@
-// src/pages/ManageSubjects.jsx
+
 import React, { useState } from 'react';
 
 const ManageSubjects = () => {
