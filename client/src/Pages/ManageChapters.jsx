@@ -1,4 +1,4 @@
-// src/pages/ManageChapters.jsx
+
 import React, { useState } from 'react';
 
 const ManageChapters = () => {
