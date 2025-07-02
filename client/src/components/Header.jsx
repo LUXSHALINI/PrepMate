@@ -19,7 +19,7 @@ const Header = () => {
         </h1>
       </div>
 
-      {/* Navigation */}
+     
       <nav className="space-x-3 flex items-center text-sm">
         <Link to="/home" className="text-white hover:underline">Home</Link>
         <Link to="/features" className="text-white hover:underline">Features</Link>
