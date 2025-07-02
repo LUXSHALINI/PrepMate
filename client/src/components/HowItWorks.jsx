@@ -1,5 +1,5 @@
 import React from 'react';
-import studyImg from '../assets/Home2.jpg'; 
+import studyImg from '../assets/Home2.jpg';
 
 const steps = [
   {
@@ -7,22 +7,32 @@ const steps = [
     title: 'Create Your Profile',
     description:
       'Sign up and tell us about your learning goals, subjects, and preferred study style.',
+    targetId: 'profile',
   },
   {
     id: 2,
     title: 'Get Your Study Plan',
     description:
       'Receive a personalized study plan based on your goals and available study time.',
+    targetId: 'plan',
   },
   {
     id: 3,
     title: 'Track & Improve',
     description:
       'Follow your plan, take practice tests, and watch your performance improve over time.',
+    targetId: 'track',
   },
 ];
 
 const HowItWorks = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-white py-16 px-4 md:px-20">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-teal-900 mb-4">
@@ -34,7 +44,11 @@ const HowItWorks = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         {steps.map((step) => (
-          <div key={step.id}>
+          <div
+            key={step.id}
+            onClick={() => scrollToSection(step.targetId)}
+            className="cursor-pointer hover:scale-105 transition"
+          >
             <div className="text-white bg-teal-600 rounded-full h-14 w-14 flex items-center justify-center text-xl font-bold mx-auto mb-4">
               {step.id}
             </div>

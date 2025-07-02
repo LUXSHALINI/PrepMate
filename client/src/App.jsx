@@ -5,7 +5,7 @@ import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 import StudentRegister from './Pages/StudentRegister';
 import PaymentForm from './components/PaymentForm';
-// import Practice from './Pages/Practice';
+import Practice from './Pages/Practice';
 // import Features from './Pages/Features';
 import TrialConfirmation from './Pages/TrialConfirmation'; 
 import FreeTrialSignup from './Pages/FreeTrialSignup';
@@ -30,12 +30,13 @@ function App() {
         {/* <Route path="/features" element={<Features />} /> */}
         <Route path="/trial-success" element={<TrialConfirmation />} />
         <Route path="/signup-trial" element={<FreeTrialSignup />} />
-        {/* <Route path="/practice" element={<Practice />} /> */}
+        <Route path="/practice" element={<Practice />} />
         <Route path="/admin/students" element={<StudentList />} />
         <Route path="/register" element={<Register/>} />
         <Route path="/admindashboard" element={<AdminDashboard/>} />
   
       </Routes>
+  
     </Router>
   );
 }

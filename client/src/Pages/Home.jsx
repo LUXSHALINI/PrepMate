@@ -18,11 +18,11 @@ const Home = () => {
       <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
         Study Smarter, Not Harder<br />
         with <span className="text-cyan-200">PrepMate</span>
-      </h1> {/* was text-5xl */}
+      </h1> 
       
       <p className="text-sm md:text-base text-white/90 mb-8">
         Personalized exam preparation to help you study smarter and achieve your goals.
-      </p> {/* was text-base */}
+      </p> 
 
       <div className="flex gap-4">
         <button
@@ -50,8 +50,9 @@ const Home = () => {
       <FeatureGrid />
 
       <HowItWorks/>
-      <ExperiencePrepMate/>
       
+      <ExperiencePrepMate/>
+      <Footer/>
     
 
       {/* CTA Section */}
@@ -71,6 +72,6 @@ const Home = () => {
     </div>
   );
 };
-<Footer/>
+
 
 export default Home;
