@@ -7,7 +7,7 @@ const StudentList = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    // Replace with real API call
+    
     setStudents([
       { id: 1, name: 'Luxshalini', school: 'XYZ School', level: 'Medium', subjects: ['Maths', 'Science'], active: true },
       { id: 2, name: 'Ram', school: 'ABC College', level: 'Weak', subjects: ['English'], active: false },
