@@ -368,7 +368,7 @@ const Practice = () => {
 
             {!selectedSubject && (
               <div className="text-center">
-                <Button disabled className="bg-white/20 text-white/60 cursor-not-allowed text-lg px-8 py-3">
+                <Button disabled className="bg-teal-900 text-white/60 cursor-not-allowed text-lg px-8 py-3">
                   Select a Subject First
                 </Button>
               </div>

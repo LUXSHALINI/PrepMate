@@ -10,7 +10,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "../components/avatar"
 // import PerformanceChart from "../components/performancechart";
 import RecentActivities from "../components/recentactivities"
 import UpcomingTasks from "../components/upcomingtasks"
-import StudyStreak from "../components/studystreak"
 import StudyGoals from "../components/studygoals"
 import StudyNotes from "../components/studynotes"
 import Leaderboard from "../components/leaderboard"
@@ -116,7 +115,7 @@ export default function Dashboard() {
 
           <TabsContent value="overview" className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <StudyStreak />
+       
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
