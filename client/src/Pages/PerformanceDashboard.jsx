@@ -11,7 +11,7 @@ const PerformanceDashboard = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        // Fetch students progress data
+ 
         const studentsRes = await axios.get('/api/performance/students-progress');
         // Fetch practice stats data
         const statsRes = await axios.get('/api/performance/practice-stats');
