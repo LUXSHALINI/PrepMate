@@ -19,7 +19,7 @@ const FreeTrialSignup = () => {
     e.preventDefault();
     console.log('User registered for trial:', formData);
 
-    // ✅ After registration, redirect to trial success page
+  
     navigate('/trial-success');
   };
 
