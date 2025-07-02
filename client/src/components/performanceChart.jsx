@@ -9,7 +9,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Sample data
 const data = [
   { day: "Mon", score: 40 },
   { day: "Tue", score: 55 },
