@@ -41,7 +41,7 @@ const AdminDashboard = () => {
         <StudentTable students={students} />
       </section>
 
-      {/* Content Management Section */}
+     
       <section>
         <h2 className="text-2xl font-bold mb-4">📚 Content Management</h2>
         <ManageSubjects />
