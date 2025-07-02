@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
+       
         <div>
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
           <ul className="space-y-1 text-sm text-white/90">
