@@ -315,7 +315,7 @@ const Practice = () => {
         </div>
       </div>
 
-      {/* Subject Selection */}
+
       <div className="max-w-4xl mx-auto px-4 pb-12">
        <Card className="bg-white/10 backdrop-blur-sm border-white/20">
           <CardHeader>
