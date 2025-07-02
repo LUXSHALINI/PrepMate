@@ -1,4 +1,4 @@
-// src/pages/AdminDashboard.jsx
+
 
 import React, { useEffect, useState } from 'react';
 import StudentTable from '../components/StudentTable';
