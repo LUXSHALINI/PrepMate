@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="bg-teal-600 text-white min-h-screen font-sans">
-  {/* Hero Section */}
+
   <div className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
       <h2 className="text-sm mb-2 uppercase tracking-wide">Welcome to PrepMate!</h2> {/* was text-lg */}
