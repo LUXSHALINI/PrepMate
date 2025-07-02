@@ -70,7 +70,7 @@ export default function Dashboard() {
 
       <div className="p-6 space-y-6">
       
-      
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {stats.map((stat, index) => (
             <Card
@@ -97,7 +97,7 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* Main Content Tabs */}
+        
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           <TabsList className="grid w-full grid-cols-2 lg:w-[300px] bg-gradient-to-r from-indigo-100 to-purple-100 p-1">
             <TabsTrigger
