@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social */}
+     
         <div>
           <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
           <div className="flex gap-3">
