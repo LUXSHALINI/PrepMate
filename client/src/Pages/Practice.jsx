@@ -203,7 +203,7 @@ const Practice = () => {
   if (sessionStarted && currentQuestion) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-800 text-white font-sans p-4">
-        {/* Header */}
+      
         <div className="max-w-4xl mx-auto mb-6">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-3">
