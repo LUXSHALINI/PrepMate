@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-teal-900 text-white py-8 px-6 mt-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
-        {/* Brand */}
+       
         <div>
           <h2 className="text-xl font-bold mb-2">PrepMate</h2>
           <p className="text-sm text-white/80">
