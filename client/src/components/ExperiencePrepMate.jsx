@@ -34,7 +34,7 @@ const ExperiencePrepMate = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left - Feature Cards */}
+    
         <div className="space-y-6">
           {features.map((feature, idx) => (
             <div
