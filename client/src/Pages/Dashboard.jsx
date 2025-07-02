@@ -143,7 +143,8 @@ export default function Dashboard() {
                   <CardDescription className="text-purple-600">Your learning performance over time</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  {/* <performancechart /> */}
+              
+              
                 </CardContent>
               </Card>
             </div>
