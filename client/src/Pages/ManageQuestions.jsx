@@ -1,4 +1,4 @@
-// src/pages/ManageQuestions.jsx
+
 import React, { useState } from 'react';
 
 const ManageQuestions = () => {
