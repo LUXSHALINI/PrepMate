@@ -26,7 +26,7 @@ const PaymentForm = () => {
         <h2 className="text-lg font-semibold text-gray-800 mb-6">Payment methods</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Contact */}
+        
           <div>
             <label className="text-sm font-medium text-gray-700 block mb-1">Contact info</label>
             <input
