@@ -42,7 +42,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
    
-   
+
       <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-6 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -69,7 +69,8 @@ export default function Dashboard() {
       </div>
 
       <div className="p-6 space-y-6">
-        {/* Stats Grid */}
+      
+      
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {stats.map((stat, index) => (
             <Card
