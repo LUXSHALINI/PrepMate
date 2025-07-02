@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from '../../styles/PracticeSession.module.css';
+
 
 const SubjectCard = ({ subject, isSelected, onSelect }) => {
   return (
