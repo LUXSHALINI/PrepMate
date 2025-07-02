@@ -302,7 +302,7 @@ const Practice = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-600 to-teal-800 text-white font-sans">
-      {/* Header */}
+   
       <div className="text-center py-12 px-4">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">Practice Session</h1>
