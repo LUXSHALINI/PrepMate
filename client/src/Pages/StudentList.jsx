@@ -1,4 +1,4 @@
-// src/Pages/StudentList.jsx
+
 import React, { useState, useEffect } from 'react';
 import AdminNavbar from '../components/AdminNavbar';
 import StudentCard from '../components/StudentCard';
