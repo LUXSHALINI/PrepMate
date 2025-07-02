@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6 space-y-10">
-      {/* Student Management Section */}
+  
       <section>
         <h1 className="text-2xl font-bold mb-4">👩‍🎓 Student Management</h1>
         <StudentTable students={students} />
