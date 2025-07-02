@@ -20,7 +20,7 @@ const StudentRegister = () => {
 
     console.log('Register Data:', formData);
 
-    // ✅ After successful registration, redirect to trial success
+   
     navigate('/trial-success');
   };
 
