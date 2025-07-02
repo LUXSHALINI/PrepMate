@@ -76,7 +76,7 @@ const PerformanceDashboard = () => {
         </table>
       </section>
 
-      {/* Practice Stats by Subject */}
+     
       <section>
         <h2 style={{ marginBottom: '0.5rem' }}>Practice Stats by Subject</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
