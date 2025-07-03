@@ -1,13 +1,13 @@
-"use client"
+
 
 import { useState } from "react"
-import { AdminSidebar } from "@/components/admin-sidebar"
-import { DashboardOverview } from "@/components/dashboard-overview"
-import { StudentManagement } from "@/components/student-management"
-import { ContentManagement } from "@/components/content-management"
-import { Analytics } from "@/components/analytics"
-import { UserManagement } from "@/components/user-management"
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
+import { AdminSidebar } from "../components/adminsidebar"
+import { DashboardOverview } from "../components/dashboardoverview"
+import { StudentManagement } from "../components/studentmanagement"
+import { ContentManagement } from "../components/contentmanagement"
+import { Analytics } from "../components/analytics"
+import { UserManagement } from "../components/usermanagement"
+import { SidebarProvider, SidebarInset } from "../components/sidebar"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,9 +15,9 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Separator } from "@/components/ui/separator"
-import { SidebarTrigger } from "@/components/ui/sidebar"
+}from "../components/Breadcrumb"
+import { Separator } from "../components/separator"
+import { SidebarTrigger } from "../components/sidebar"
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("overview")

@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
 
 const Register = () => {
+  const { login } = useAuth(); // Fix: Call useAuth() with ()
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,8 +14,6 @@ const Register = () => {
     confirmPassword: '',
     role: 'student', 
   });
-
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,17 +32,23 @@ const Register = () => {
         name: formData.name,
         email: formData.email,
         password: formData.password,
-        role: formData.role,
+        role: formData.role
       });
 
       if (res.status === 201) {
-        alert('Registration successful!');
-        navigate('/trial-success');
+        const userData = res.data; // Assuming your backend returns the user object
+        login(userData); // Store in context
+
+        if (formData.role === 'admin') {
+          navigate('/admin-dashboard');
+        } else {
+          navigate('/trial-success');
+        }
       }
     } catch (err) {
       console.error('Axios Error:', err);
 
-      if (err.response && err.response.data && err.response.data.error) {
+      if (err.response?.data?.error) {
         alert(err.response.data.error);
       } else {
         alert('Something went wrong. Please try again.');

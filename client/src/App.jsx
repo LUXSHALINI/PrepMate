@@ -10,6 +10,7 @@ import TrialConfirmation from './Pages/TrialConfirmation';
 import FreeTrialSignup from './Pages/FreeTrialSignup';
 import StudentList from './Pages/StudentList';
 import Register from './Pages/Register';
+import AdminDashboard from './Pages/admin';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/practice" element={<Practice />} />
         <Route path="/admin/students" element={<StudentList />} />
         <Route path="/register" element={<Register/>} />
+        <Route path="/admin-dashboard" element={<AdminDashboard/>} />
 
   
       </Routes>

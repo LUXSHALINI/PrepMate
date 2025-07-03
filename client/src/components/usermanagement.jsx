@@ -1,8 +1,8 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/card"
+import { Button } from "../components/button"
+import { Badge } from "../components/badge"
+// import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../components/table"
+// import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../components/dropdown-menu"
 import { UserCheck, Plus, MoreHorizontal, Shield, Users, Crown } from "lucide-react"
 
 export function UserManagement() {

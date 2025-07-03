@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Progress } from "@/components/ui/progress"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/card"
+import { Button } from "../components/button"
+import { Badge } from "../components/badge"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/tabs"
+import { Progress } from "../components/progress"
 import { BookOpen, FileText, HelpCircle, Plus, Edit, Trash2 } from "lucide-react"
 
 export function ContentManagement() {

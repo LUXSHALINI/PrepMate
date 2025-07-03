@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/card"
+import { Progress } from "../components/progress"
+import { Badge } from "../components/badge"
 import { BarChart3, TrendingUp, Users, Clock, Award, Target } from "lucide-react"
 
 export function Analytics() {

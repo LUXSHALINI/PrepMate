@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/card"
+import { Progress } from "../components/progress"
+import { Badge } from "../components/badge"
 import { Users, BookOpen, TrendingUp, Award, Clock, AlertCircle, CheckCircle, Activity } from "lucide-react"
 
 export function DashboardOverview() {
@@ -26,21 +26,21 @@ export function DashboardOverview() {
       icon: TrendingUp,
       color: "text-purple-600",
     },
-    {
-      title: "Certificates Issued",
-      value: "156",
-      change: "+23",
-      icon: Award,
-      color: "text-orange-600",
-    },
+    // {
+    //   title: "Certificates Issued",
+    //   value: "156",
+    //   change: "+23",
+    //   icon: Award,
+    //   color: "text-orange-600",
+    // },
   ]
 
   const recentActivities = [
-    { student: "Shalini Kumar", action: "Completed Chapter 5", time: "2 hours ago", status: "completed" },
-    { student: "Kala Devi", action: "Started new course", time: "4 hours ago", status: "active" },
-    { student: "Mala Singh", action: "Submitted assignment", time: "6 hours ago", status: "pending" },
-    { student: "Dushy Patel", action: "Achieved 90% score", time: "1 day ago", status: "completed" },
-    { student: "Jalani Rao", action: "Joined discussion", time: "2 days ago", status: "active" },
+    { student: "Shalini", action: "Completed Chapter 5", time: "2 hours ago", status: "completed" },
+    { student: "Kala", action: "Started new course", time: "4 hours ago", status: "active" },
+    { student: "Mala", action: "Submitted assignment", time: "6 hours ago", status: "pending" },
+    { student: "Dushy", action: "Achieved 90% score", time: "1 day ago", status: "completed" },
+    { student: "Rubzz", action: "Joined discussion", time: "2 days ago", status: "active" },
   ]
 
   const performanceData = [

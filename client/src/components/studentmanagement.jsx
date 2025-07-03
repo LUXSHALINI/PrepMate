@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/card"
+import { Button } from "../components/button"
+import { Input } from "../components/input"
+import { Badge } from "../components/badge"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../components/table"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../components/dropdownmenu"
 import {
   Dialog,
   DialogContent,
@@ -14,9 +14,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+} from "../components/dialog"
+import { Label } from "../components/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/select"
 import { Search, Plus, MoreHorizontal, Mail, Phone, MapPin, GraduationCap } from "lucide-react"
 
 export function StudentManagement() {
