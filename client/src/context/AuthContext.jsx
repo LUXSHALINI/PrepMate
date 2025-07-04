@@ -1,12 +1,13 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+// src/context/AuthContext.jsx
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null); // Stores user data
-  const [loading, setLoading] = useState(true); // Optional: for handling loading state
+  const [user, setUser] = useState(null);         // Stores logged-in user
+  const [loading, setLoading] = useState(true);   // Indicates whether auth check is ongoing
 
-  // Load user from localStorage on app start
+  // Runs once on app load to check localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
@@ -15,26 +16,24 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }, []);
 
-  // Login function
+  // Login function — call this after successful login/register
   const login = (userData) => {
     setUser(userData);
     localStorage.setItem('user', JSON.stringify(userData));
   };
 
-  // Logout function
+  // Logout function — clears user and storage
   const logout = () => {
     setUser(null);
     localStorage.removeItem('user');
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, loading }}>
+    <AuthContext.Provider value={{ user, setUser, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
 };
 
-// Custom hook for easy usage
-export const useAuth = () => {
-  return useContext(AuthContext);
-};
+// Custom hook to use the AuthContext in components
+export const useAuth = () => useContext(AuthContext);

@@ -29,7 +29,7 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <section className="bg-white text-teal-900 px-6 py-20">
+    <section id="features" className="bg-white text-teal-900 px-6 py-20">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">Why Choose PrepMate?</h2>
         <p className="text-sans text-teal-800 mb-12">

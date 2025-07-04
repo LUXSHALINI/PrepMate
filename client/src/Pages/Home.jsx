@@ -4,6 +4,7 @@ import FeatureGrid from '../components/FeatureGrid';
 import HowItWorks from '../components/HowItWorks';
 import ExperiencePrepMate from '../components/ExperiencePrepMate';
 import Footer from '../components/Footer';
+import home from '../assets/Home1.jpg'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const Home = () => {
 
         {/* Right Side - Image */}
         <div className="bg-white rounded-2xl h-64 md:h-80 shadow-xl flex items-center justify-center overflow-hidden">
-        <img src="../assets/Home1.jpg" alt="Home" className="h-full object-cover rounded-2xl" />
+        <img src={home} alt="Home" className="h-full object-cover rounded-2xl" />
 
         </div>
       </div>

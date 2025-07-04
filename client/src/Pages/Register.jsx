@@ -36,8 +36,8 @@ const Register = () => {
       });
 
       if (res.status === 201) {
-        const userData = res.data; // Assuming your backend returns the user object
-        login(userData); // Store in context
+        const userData = res.data; 
+        login(userData); 
 
         if (formData.role === 'admin') {
           navigate('/admin-dashboard');

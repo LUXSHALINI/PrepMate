@@ -21,10 +21,16 @@ const Login = () => {
       });
   
       const data = res.data;
-      console.log(data);
-      console.log('Login request body:', res.body);
-
+      console.log('Login response:', data);
+  
+      // ✅ Save user object to localStorage
+      if (data.user) {
+        localStorage.setItem('user', JSON.stringify(data.user));
+      }
+  
       alert('Login successful!');
+  
+      // ✅ Navigate based on role
       if (data.user.role === 'admin') {
         navigate('/admin-dashboard');
       } else {

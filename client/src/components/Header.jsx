@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'
 
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
 
     
       <div className="flex items-center space-x-3">
-        <img src="./src/assets/logo.png" alt="PrepMate Logo" className="w-8 h-8 rounded-full" />
+        <img src={logo} alt="PrepMate Logo" className="w-8 h-8 rounded-full" />
         <h1 className="text-2xl font-extrabold tracking-wide" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}>
           <span style={{ color: "#52DAE4" }}>P</span>
           <span style={{ color: "#6AF1ED" }}>rep</span>
@@ -21,12 +22,13 @@ const Header = () => {
 
      
       <nav className="space-x-3 flex items-center text-sm">
-        <Link to="/home" className="text-white hover:underline">Home</Link>
-        <Link to="/features" className="text-white hover:underline">Features</Link>
-        <Link to="/testimonials" className="text-white hover:underline">Testimonials</Link>
-        <Link to="/pricing" className="text-white hover:underline">Pricing</Link>
-        <Link to="/about" className="text-white hover:underline">About</Link>
-        <Link to="/login" className="text-white hover:underline">Sign In</Link>
+        <Link to="/" className="text-white hover:underline">Home</Link>
+<Link to="/login">
+  <button className="bg-white text-teal-900 px-4 py-2 rounded hover:bg-teal-700 transition">
+    Sign In
+  </button>
+</Link>
+
 
       </nav>
 
