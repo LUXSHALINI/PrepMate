@@ -1,17 +1,17 @@
 import express from 'express';
 import { getAllStudents, toggleStudentStatus, sendNotification } from '../controllers/admin.controller.js';
-import { verifyAdmin } from '../middlewares/auth.middleware.js';
+import { isAdmin } from '../middlewares/auth.middleware.js';
 
 const router = express.Router();
 
 // View all students
-router.get('/', verifyAdmin, getAllStudents);
+router.get('/', isAdmin, getAllStudents);
 
 // Activate/Deactivate student
-router.patch('/students/:id/status', verifyAdmin, toggleStudentStatus);
+router.patch('/students/:id/status', isAdmin, toggleStudentStatus);
 
 // Send notification
-router.post('/students/:id/notify', verifyAdmin, sendNotification);
+router.post('/students/:id/notify', isAdmin, sendNotification);
 
 export default router;
 

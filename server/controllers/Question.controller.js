@@ -1,43 +1,48 @@
-import Question from "../models/Question.model.js";
+// 
 
-// POST /api/questions
+import Question from '../models/Question.model.js';
+
+// Admin: Add new question
+
 export const createQuestion = async (req, res) => {
   try {
-    const question = await Question.create(req.body);
-    res.status(201).json(question);
+    const { questionText, options, correctAnswer } = req.body;
+
+    if (!questionText || !options || !correctAnswer) {
+      return res.status(400).json({ message: 'Missing required fields' });
+    }
+
+    const question = await Question.create({
+      questionText,
+      options,
+      correctAnswer,
+    });
+
+    res.status(201).json({ message: 'Question created', question });
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    console.error('Create Question Error:', err.message);
+    res.status(500).json({ message: 'Internal Server Error' });
   }
 };
 
-// GET /api/questions
-export const getQuestions = async (req, res) => {
+
+
+// Public: Get all questions (without correctAnswer)
+export const getQuestionsForUser = async (req, res) => {
   try {
-    const questions = await Question.find().sort({ createdAt: -1 });
+    const questions = await Question.find().select('-correctAnswer');
     res.json(questions);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ message: "Error fetching questions" });
   }
 };
 
-// GET /api/questions/:id
-export const getQuestionById = async (req, res) => {
+// Admin: Get all questions with correctAnswer
+export const getAllQuestionsAdmin = async (req, res) => {
   try {
-    const question = await Question.findById(req.params.id);
-    if (!question) return res.status(404).json({ error: "Not found" });
-    res.json(question);
+    const questions = await Question.find();
+    res.json(questions);
   } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-};
-
-// DELETE /api/questions/:id
-export const deleteQuestion = async (req, res) => {
-  try {
-    const deleted = await Question.findByIdAndDelete(req.params.id);
-    if (!deleted) return res.status(404).json({ error: "Not found" });
-    res.json({ message: "Deleted" });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ message: "Error fetching questions" });
   }
 };

@@ -6,8 +6,8 @@ import activityRoutes from './routes/activity.routes.js';
 import authRoutes from './routes/auth.routes.js'; 
 import userRoutes from './routes/userRoutes.js';
 import studentRoutes from './routes/student.routes.js';
-import chapterRoutes from './routes/chapter.routes.js';
-import subscriptionRoutes from './routes/subscription.routes.js';
+// import chapterRoutes from './routes/chapter.routes.js';
+// import subscriptionRoutes from './routes/subscription.routes.js';
 import paymentRoutes from './routes/payment.routes.js';
 import QuestionRoutes from './routes/Question.routes.js';
 import dashboardRoutes from './routes/dashboard.routes.js';
@@ -32,16 +32,17 @@ app.get('/', (req, res) => {
   res.status(200).send('✅ Server is up and CORS is enabled!');
 });
 
-// ✅ API Routes
-app.use('/api/auth', authRoutes);
+
+// ==== General Routes ====
 app.use('/api/users', userRoutes);
 app.use('/api/students', studentRoutes);
-app.use('/api/chapters', chapterRoutes);
+// app.use('/api/chapters', chapterRoutes);
 app.use('/api/questions', QuestionRoutes);
-app.use('/api/subscription', subscriptionRoutes);
+// app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/activities', activityRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/auth',  authRoutes)
 
 
 // ✅ MongoDB Connection and Server Start
