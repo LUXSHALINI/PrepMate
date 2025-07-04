@@ -35,7 +35,7 @@ export const register = async (req, res) => {
 
     await newUser.save();
 
-    return res.status(201).json({ message: 'User registered successfully' });
+    return res.status(201).json({ message: 'User registered successfully', newUser });
   } catch (error) {
     console.error('Registration error:', error);
     return res.status(500).json({ error: 'Internal server error' });
