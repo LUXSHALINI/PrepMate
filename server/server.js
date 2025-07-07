@@ -11,6 +11,7 @@ import studentRoutes from './routes/student.routes.js';
 import paymentRoutes from './routes/payment.routes.js';
 import QuestionRoutes from './routes/Question.routes.js';
 import dashboardRoutes from './routes/dashboard.routes.js';
+import EditProfileRoutes from './routes/editprofile.routes.js';
 
 // Load environment variables
 dotenv.config();
@@ -42,7 +43,8 @@ app.use('/api/questions', QuestionRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/activities', activityRoutes);
 app.use('/api/dashboard', dashboardRoutes);
-app.use('/api/auth',  authRoutes)
+app.use('/api/auth',  authRoutes);
+app.use('/api/editprofile', EditProfileRoutes);
 
 
 // ✅ MongoDB Connection and Server Start

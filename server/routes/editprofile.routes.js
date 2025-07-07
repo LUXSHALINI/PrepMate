@@ -4,7 +4,7 @@ import { protect } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
-router.get("/me", protect, getMyProfile);       // 🔒 GET /api/users/me
-router.put("/me", protect, updateMyProfile);    // 🔒 PUT /api/users/me
+router.get("/me", getMyProfile);       // 🔒 GET /api/users/me
+router.put("/me", updateMyProfile);    // 🔒 PUT /api/users/me
 
 export default router;

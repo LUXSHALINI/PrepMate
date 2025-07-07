@@ -1,18 +1,21 @@
 import express from 'express';
-import { protect, isAdmin } from '../middlewares/auth.middleware.js';
 import {
   createQuestion,
   getQuestionsForUser,
   getAllQuestionsAdmin,
+  evaluateAnswers,
 } from '../controllers/Question.controller.js';
+import { protect, isAdmin } from '../middlewares/auth.middleware.js';
 
 const router = express.Router();
 
-router.post('/', createQuestion);
-router.get('/user', protect, getQuestionsForUser);
-router.get('/',  getAllQuestionsAdmin);
+router.post('/', protect, isAdmin, createQuestion);
+router.get('/user', getQuestionsForUser); // for student
+router.get('/', protect, isAdmin, getAllQuestionsAdmin); // for admin
+router.post('/evaluate', evaluateAnswers); // for student evaluation
 
 export default router;
+
 
 // import express from 'express';
 // import { createQuestion, getAllQuestions } from '../controllers/Question.controller.js';

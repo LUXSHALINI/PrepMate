@@ -1,6 +1,6 @@
-import User from "../models/User.js";
+import User from "../models/user.model.js";
 
-// 👁 GET logged-in user's profile
+//  GET logged-in user's profile
 export const getMyProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user); // ✅ user ID from token
