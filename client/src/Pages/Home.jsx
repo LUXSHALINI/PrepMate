@@ -41,7 +41,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="bg-white rounded-2xl h-64 md:h-80 shadow-xl flex items-center justify-center overflow-hidden">
+        <div className="bg-white rounded-2xl h-60 md:h-100 shadow-xl flex items-center justify-center overflow-hidden">
         <img src={home} alt="Home" className="h-full object-cover rounded-2xl" />
 
         </div>

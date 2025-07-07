@@ -15,8 +15,8 @@ const menuItems = [
   { name: "Question Bank", path: "/admin/questions", icon: <FaQuestion /> },
   { name: "Add Questions", path: "/admin/add-question", icon: <FaPlus /> },
   { name: "Analytics", path: "/admin/analytics", icon: <FaChartBar /> },
-  { name: "Help & Support", path: "/admin/support", icon: <FaLifeRing /> },
-  { name: "Settings", path: "/admin/settings", icon: <FaCog /> },
+  // { name: "Help & Support", path: "/admin/support", icon: <FaLifeRing /> },
+  // { name: "Settings", path: "/admin/settings", icon: <FaCog /> },
 ];
 
 const Sidebar = () => {

@@ -20,8 +20,9 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("/users/me");
+        const res = await axios.get("http://localhost:5000/api/editprofile/me");
         setFormData(res.data);
+        console.log("Profile loaded:", res.data);
       } catch (err) {
         console.error("Failed to load profile", err);
       } finally {
@@ -38,7 +39,7 @@ const EditProfile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put("/users/me", formData);
+      const res = await axios.put("http://localhost:5000/api/editprofile/me", formData);
       setFormData(res.data);
       setSuccessMsg("Profile updated successfully!");
       setTimeout(() => setSuccessMsg(""), 3000);
