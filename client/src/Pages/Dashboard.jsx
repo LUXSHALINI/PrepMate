@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
 import Sidebar from '../components/Sidebar';
-import StatCard from '../components/StatCard';
-import SubjectProgressCard from '../components/SubjectProgressCard';
-import ActivityItem from '../components/ActivityItem';
 import axios from 'axios';
 
 const Dashboard = () => {
@@ -14,6 +11,8 @@ const Dashboard = () => {
   const [submitted, setSubmitted] = useState(false);
   const [user, setUser] = useState({ name: '', email: '' });
 
+  const [selectedSubject, setSelectedSubject] = useState('Mathematics'); // Default subject
+
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser) {
@@ -21,17 +20,18 @@ const Dashboard = () => {
     }
   }, []);
 
-  const fetchQuestions = async () => {
+  const fetchQuestions = async (subject) => {
     try {
-      const res = await axios.get('http://localhost:5000/api/questions');
+      const res = await axios.get(`http://localhost:5000/api/questions?subject=${subject}`);
       setQuestions(res.data.slice(0, 10));
     } catch (err) {
       console.error('Failed to fetch questions:', err);
     }
   };
 
-  const startExam = () => {
-    fetchQuestions();
+  const startExam = (subject) => {
+    setSelectedSubject(subject);
+    fetchQuestions(subject);
     setShowExamModal(true);
     setCurrentIndex(0);
     setAnswers({});
@@ -79,37 +79,17 @@ const Dashboard = () => {
           <p className="text-sm text-gray-500 mt-1">Bio: Dedicated student preparing for competitive exams</p>
         </div>
 
-        {/* Stat Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <StatCard label="Study Hours" value="4.5h" icon="⏱️" />
-          <StatCard label="Streak Days" value="7" icon="📆" />
-          <StatCard label="Completed" value="12" icon="🎯" />
-        </div>
-
-        {/* Subject Progress */}
-        <h3 className="text-lg font-semibold mb-2">Subject Progress</h3>
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
-          <SubjectProgressCard subject="Mathematics" progress={78} icon="🧮" />
-          <SubjectProgressCard subject="Science" progress={65} icon="🔬" />
-          <SubjectProgressCard subject="English" progress={89} icon="📘" />
-        </div>
-
-        {/* Activity */}
-        <h3 className="text-lg font-semibold mb-2">Recent Activity</h3>
-        <div className="space-y-2 mb-8">
-          <ActivityItem text="Completed Mathematics Quiz - Algebra (Score: 92%)" time="2 hours ago" />
-          <ActivityItem text="Studied Science - Chemical Reactions (120 minutes)" time="4 hours ago" />
-          <ActivityItem text="Completed English Grammar Exercise" time="Yesterday" />
-        </div>
-
-        {/* Exam Button */}
-        <div className="text-center">
-          <button
-            onClick={startExam}
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-          >
-            🎓 Take the Exam
-          </button>
+        {/* Subject Buttons */}
+        <div className="flex gap-4 justify-center mb-4">
+          {['Mathematics', 'Science', 'English'].map((subject) => (
+            <button
+              key={subject}
+              onClick={() => startExam(subject)}
+              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+            >
+              🎓 Take {subject} Exam
+            </button>
+          ))}
         </div>
 
         {/* Exam Modal */}
@@ -126,7 +106,7 @@ const Dashboard = () => {
               {!submitted ? (
                 <>
                   <h2 className="text-lg font-bold text-teal-700">
-                    Question {currentIndex + 1} of {questions.length}
+                    {selectedSubject} – Question {currentIndex + 1} of {questions.length}
                   </h2>
                   <p className="font-medium">{questions[currentIndex].questionText}</p>
 
