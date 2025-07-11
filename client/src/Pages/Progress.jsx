@@ -11,7 +11,7 @@ const Progress = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const userId = "64ab12c3e6e9e2d5fc99be11"; // 👉 Replace with real user ID
+  const userId = "64ab12c3e6e9e2d5fc99be11"; 
 
   useEffect(() => {
     const fetchData = async () => {

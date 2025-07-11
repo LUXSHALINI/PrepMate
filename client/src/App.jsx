@@ -10,13 +10,13 @@ import FreeTrialSignup from './Pages/FreeTrialSignup';
 import Register from './Pages/Register';
 import MySubjects from './Pages/MySubjects';
 import EditProfile from "./components/EditProfile";
-import Progress from "./Pages/Progress";
 import AdminDashboard from './Pages/Admindashboard';
 import UserManagementPage from './Pages/UserManagementPage';
-// import AddQuestion from './Pages/AddQuestionModel';
 import UserQuestionPage from './Pages/UserQuestionPage';
-import AdminQuestionModal from './Pages/AddQuestionModal';
 import AdminQuestionPage from './Pages/AdminQuestionPage';
+import MathsChapters from './Pages/Mathschapter';
+import PaymentSuccess from './Pages/PaymentSuccess';
+
 
 
 
@@ -24,8 +24,7 @@ function App() {
   return (
     <Router>
       <Header /> 
-      
-      <Routes>
+            <Routes>
         
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -37,20 +36,18 @@ function App() {
         
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/mysubjects" element={<MySubjects />} />
-        <Route path="/progress" element={<Progress />} />
         <Route path="/editprofile" element={<EditProfile />} />
 
         <Route path="/admin/questions" element={<AdminQuestionPage />} />
 
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/users" element={<UserManagementPage />} />
-        <Route path="/admin/add-question" element={<AdminQuestionModal />} />
+        {/* <Route path="/admin/add-question" element={<AdminQuestionModal />} /> */}
 
         <Route path="/questions" element={<UserQuestionPage />} />
        
-        
-        
-        <Route path="*" element={<div className="p-6 text-center text-gray-500">404 - Page Not Found</div>} />
+        <Route path="/math-chapters" element={<MathsChapters />} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
       </Routes>
     </Router>
   );

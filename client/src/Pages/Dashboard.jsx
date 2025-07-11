@@ -79,7 +79,7 @@ const Dashboard = () => {
           <p className="text-sm text-gray-500 mt-1">Bio: Dedicated student preparing for competitive exams</p>
         </div>
 
-        {/* Subject Buttons */}
+        Subject Buttons
         <div className="flex gap-4 justify-center mb-4">
           {['Mathematics', 'Science', 'English'].map((subject) => (
             <button

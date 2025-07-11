@@ -13,7 +13,7 @@ export default function AdminDashboard() {
         {/* Header */}
         <div>
           <h1 className="text-3xl font-bold text-teal-800">Welcome Admin!</h1>
-          <p className="text-gray-600">admin@pro.com</p>
+          <p className="text-gray-600">banu@gmail.com</p>
         </div>
 
         {/* Stats Section */}
