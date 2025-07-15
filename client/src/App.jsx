@@ -9,14 +9,14 @@ import TrialConfirmation from './Pages/TrialConfirmation';
 import FreeTrialSignup from './Pages/FreeTrialSignup';
 import Register from './Pages/Register';
 import MySubjects from './Pages/MySubjects';
-import EditProfile from "./components/EditProfile";
+// import EditProfile from "./components/EditProfile";
 import AdminDashboard from './Pages/Admindashboard';
 import UserManagementPage from './Pages/UserManagementPage';
 import UserQuestionPage from './Pages/UserQuestionPage';
 import AdminQuestionPage from './Pages/AdminQuestionPage';
 import MathsChapters from './Pages/Mathschapter';
 import PaymentSuccess from './Pages/PaymentSuccess';
-
+import ProgressPage from "./Pages/ProgressPage";
 
 
 
@@ -36,7 +36,7 @@ function App() {
         
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/mysubjects" element={<MySubjects />} />
-        <Route path="/editprofile" element={<EditProfile />} />
+        {/* <Route path="/editprofile" element={<EditProfile />} /> */}
 
         <Route path="/admin/questions" element={<AdminQuestionPage />} />
 
@@ -48,6 +48,7 @@ function App() {
        
         <Route path="/math-chapters" element={<MathsChapters />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
+        <Route path="/progress" element={<ProgressPage />} />
       </Routes>
     </Router>
   );

@@ -79,19 +79,6 @@ const Dashboard = () => {
           <p className="text-sm text-gray-500 mt-1">Bio: Dedicated student preparing for competitive exams</p>
         </div>
 
-        Subject Buttons
-        <div className="flex gap-4 justify-center mb-4">
-          {['Mathematics', 'Science', 'English'].map((subject) => (
-            <button
-              key={subject}
-              onClick={() => startExam(subject)}
-              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-            >
-              🎓 Take {subject} Exam
-            </button>
-          ))}
-        </div>
-
         {/* Exam Modal */}
         {showExamModal && questions.length > 0 && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

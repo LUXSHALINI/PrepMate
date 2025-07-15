@@ -17,9 +17,9 @@ const Sidebar = () => {
           📚 My Subjects
         </NavLink>
        
-        <NavLink to="/editprofile" className={linkClasses}>
+        {/* <NavLink to="/editprofile" className={linkClasses}>
           ⚙️ Edit Profile
-        </NavLink>
+        </NavLink> */}
       </nav>
     </aside>
   );

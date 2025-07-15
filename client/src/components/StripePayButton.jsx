@@ -1,29 +1,37 @@
-import axios from 'axios';
+// import { loadStripe } from '@stripe/stripe-js';
+// import axios from 'axios';
 
-const StripePayButton = ({ chapterId }) => {
-  const handlePayment = async () => {
-    try {
-      const token = localStorage.getItem('auth_token');
-      const res = await axios.post(
-        'http://localhost:5000/api/payments/create-checkout-session',
-        { chapterId },
-        {
-          headers: { Authorization: `Bearer ${token}` }
-        }
-      );
-      const sessionId = res.data.id;
-      window.location.href = `https://checkout.stripe.com/pay/${sessionId}`;
-    } catch (err) {
-      alert('Payment failed');
-      console.error(err);
-    }
-  };
+// const stripePromise = loadStripe('your_stripe_publishable_key_here'); // Replace with your real key
 
-  return (
-    <button onClick={handlePayment} className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-      💳 Pay to Unlock Exam
-    </button>
-  );
-};
+// const StripePayButton = ({ chapterId }) => {
+//   const handlePayment = async () => {
+//     try {
+//       const stripe = await stripePromise;
 
-export default StripePayButton;
+//       const res = await axios.post('http://localhost:5000/api/payment/create-session', {
+//         chapterId,
+//       }, {
+//         headers: {
+//           Authorization: `Bearer ${localStorage.getItem('auth_token')}`, // if auth required
+//         },
+//       });
+
+//       const sessionId = res.data.id;
+//       await stripe.redirectToCheckout({ sessionId });
+//     } catch (err) {
+//       console.error('Payment error:', err);
+//       alert('Failed to initiate payment');
+//     }
+//   };
+
+//   return (
+//     <button
+//       onClick={handlePayment}
+//       className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+//     >
+//       💳 Unlock Chapter
+//     </button>
+//   );
+// };
+
+// export default StripePayButton;

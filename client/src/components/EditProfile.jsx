@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Sidebar from "./Sidebar";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 const EditProfile = () => {
   const [formData, setFormData] = useState({
@@ -18,15 +20,18 @@ const EditProfile = () => {
   const [profilePic, setProfilePic] = useState(null);
   const [previewUrl, setPreviewUrl] = useState("");
   const [loading, setLoading] = useState(true);
-  const [successMsg, setSuccessMsg] = useState("");
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/editprofile/me");
+        const res = await axios.get("http://localhost:5000/api/editprofile/me", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("auth_token")}`,
+          },
+        });
         setFormData(res.data);
         if (res.data.profilePic) {
-          setPreviewUrl(res.data.profilePic); // assuming backend sends profilePic URL
+          setPreviewUrl(res.data.profilePic);
         }
       } catch (err) {
         console.error("Failed to load profile", err);
@@ -66,15 +71,19 @@ const EditProfile = () => {
         {
           headers: {
             "Content-Type": "multipart/form-data",
+            Authorization: `Bearer ${localStorage.getItem("auth_token")}`,
           },
         }
       );
 
       setFormData(res.data);
-      setSuccessMsg("Profile updated successfully!");
-      setTimeout(() => setSuccessMsg(""), 3000);
+      if (res.data.profilePic) {
+        setPreviewUrl(res.data.profilePic);
+      }
+      toast.success("Profile updated successfully!");
     } catch (err) {
       console.error("Update failed", err);
+      toast.error("Failed to update profile");
     }
   };
 
@@ -86,21 +95,14 @@ const EditProfile = () => {
       <main className="flex-1 p-6 md:p-10">
         <h2 className="text-2xl font-semibold mb-6">Edit Profile</h2>
 
-        {successMsg && (
-          <div className="bg-green-100 text-green-700 p-3 mb-4 rounded">
-            {successMsg}
-          </div>
-        )}
-
         <form onSubmit={handleSubmit} className="grid gap-8">
-          {/* Profile Picture + Info */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Profile Picture Upload */}
             <div className="border p-4 rounded-lg flex flex-col items-center justify-center">
               <div className="w-24 h-24 rounded-full overflow-hidden bg-gray-200 mb-4">
                 {previewUrl ? (
                   <img
                     src={previewUrl}
+                    onError={(e) => (e.target.src = "/default-avatar.png")}
                     alt="Preview"
                     className="w-full h-full object-cover"
                   />
@@ -121,7 +123,6 @@ const EditProfile = () => {
               </label>
             </div>
 
-            {/* Personal Information */}
             <div className="border p-4 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Personal Information</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -149,7 +150,6 @@ const EditProfile = () => {
                   placeholder="Email"
                   className="input col-span-2 p-2 border rounded"
                 />
-               
                 <textarea
                   name="bio"
                   value={formData.bio}
@@ -161,7 +161,6 @@ const EditProfile = () => {
             </div>
           </div>
 
-          {/* Study Preferences */}
           <div className="border p-4 rounded-lg">
             <h3 className="text-lg font-semibold mb-4">Study Preferences</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -207,7 +206,6 @@ const EditProfile = () => {
             </div>
           </div>
 
-          {/* Submit */}
           <div className="text-right">
             <button
               type="submit"

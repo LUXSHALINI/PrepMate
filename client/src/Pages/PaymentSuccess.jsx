@@ -8,36 +8,37 @@ const PaymentSuccess = () => {
 
   useEffect(() => {
     const confirm = async () => {
-      const token = localStorage.getItem('auth_token');
-      const sessionId = params.get('session_id');
+      const session_id = params.get('session_id');
       const chapterId = params.get('chapterId');
 
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/payments/confirm-payment?session_id=${sessionId}&chapterId=${chapterId}`,
-          {
-            headers: { Authorization: `Bearer ${token}` }
-          }
+          `http://localhost:5000/api/payment/confirm?session_id=${session_id}&chapterId=${chapterId}`
         );
 
         if (res.data.success) {
-          alert('✅ Payment Successful');
-          navigate('/math-chapters');
+          const updatedAttempts = JSON.parse(localStorage.getItem('mathAttempts') || '{}');
+          updatedAttempts[chapterId] = 0; // reset attempt count
+          localStorage.setItem('mathAttempts', JSON.stringify(updatedAttempts));
+
+          alert('Payment successful! Exam unlocked.');
         } else {
-          alert('❌ Payment failed');
+          alert('Payment not confirmed.');
         }
       } catch (err) {
-        console.error(err);
-        alert('Payment confirmation error');
+        console.error('Confirm error:', err);
+        alert('Something went wrong.');
       }
+
+      navigate('/math-chapters');
     };
 
     confirm();
   }, [params, navigate]);
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <p className="text-lg text-indigo-700">Verifying your payment...</p>
+    <div className="flex justify-center items-center h-screen text-xl font-semibold text-green-700">
+       Confirming payment, please wait...
     </div>
   );
 };
