@@ -9,11 +9,11 @@ const ProgressPage = () => {
   useEffect(() => {
     const fetchProgress = async () => {
       const token = localStorage.getItem("auth_token");
-      // console.log("📤 Token in fetchProgress:", token);
+      // console.log(" Token in fetchProgress:", token);
   
       const res = await fetch("http://localhost:5000/api/progress", {
         headers: {
-          Authorization: `Bearer ${token}`, // ✅ this format is critical
+          Authorization: `Bearer ${token}`, // this format is critical
         },
       });
   

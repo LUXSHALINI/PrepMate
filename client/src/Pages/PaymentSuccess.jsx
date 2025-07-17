@@ -13,7 +13,7 @@ const PaymentSuccess = () => {
 
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/payment/confirm?session_id=${session_id}&chapterId=${chapterId}`
+          `http://localhost:5000/api/payments/confirm?session_id=${session_id}&chapterId=${chapterId}`
         );
 
         if (res.data.success) {

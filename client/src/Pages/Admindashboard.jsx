@@ -22,7 +22,7 @@ export default function AdminDashboard() {
         <div>
           <h2 className="text-xl font-semibold text-teal-700">Quick Actions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-        
+       
             <ActionCard
               title="Manage Users"
               description="View and manage user accounts"

@@ -1,11 +1,14 @@
- // src/pages/MathChapters.jsx
+// src/pages/MathChapters.jsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sidebar from '../components/Sidebar';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
+
 
 const MathChapters = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
 
 
@@ -60,6 +63,7 @@ const MathChapters = () => {
     }
   };
 
+
   const startExam = async () => {
     await fetchQuestions(selectedChapter._id);
     setShowInstructionModal(false);
@@ -81,40 +85,47 @@ const MathChapters = () => {
       calculateScore();
     }
   };
+  const handlePayment = async (chapterId) => {
+    try {
+      const stripe = await stripePromise;
+      const token = localStorage.getItem('auth_token');
 
-  // const calculateScore = () => {
-  //   let sc = 0;
-  //   questions[selectedChapter._id].forEach((q) => {
-  //     if (answers[q._id] === q.correctAnswer) sc++;
-  //   });
-  //   setScore(sc);
-  //   setSubmitted(true);
+      const res = await axios.post(
+        'http://localhost:5000/api/payments/create-checkout-session',
+        { chapterId }, // Send the chapterId to backend
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
-  //   const updatedAttempts = {
-  //     ...attempts,
-  //     [selectedChapter._id]: (attempts[selectedChapter._id] || 0) + 1,
-  //   };
-  //   const updatedScores = {
-  //     ...chapterScores,
-  //     [selectedChapter._id]: sc,
-  //   };
+      const { id } = res.data;
+      await stripe.redirectToCheckout({ sessionId: id });
+      // Redirect to Stripe Checkout
+      // const result = await stripe.redirectToCheckout({ sessionId });
+     
+      if (result.error) {
+        console.error('Stripe checkout error:', result.error.message);
+        alert('Payment failed. Try again.');
+      }
+    } catch (err) {
+      console.error('Payment initiation failed:', err);
+      alert('Something went wrong with payment.');
+    }
+  };
 
-  //   setAttempts(updatedAttempts);
-  //   setChapterScores(updatedScores);
-  //   localStorage.setItem('mathAttempts', JSON.stringify(updatedAttempts));
-  //   localStorage.setItem('mathScores', JSON.stringify(updatedScores));
-  // };
   const calculateScore = async () => {
     let sc = 0;
     const totalQuestions = questions[selectedChapter._id].length;
-  
+
     questions[selectedChapter._id].forEach((q) => {
       if (answers[q._id] === q.correctAnswer) sc++;
     });
-  
+
     setScore(sc); // out of 10
     setSubmitted(true);
-  
+
     const updatedAttempts = {
       ...attempts,
       [selectedChapter._id]: (attempts[selectedChapter._id] || 0) + 1,
@@ -123,15 +134,15 @@ const MathChapters = () => {
       ...chapterScores,
       [selectedChapter._id]: sc,
     };
-  
+
     setAttempts(updatedAttempts);
     setChapterScores(updatedScores);
     localStorage.setItem('mathAttempts', JSON.stringify(updatedAttempts));
     localStorage.setItem('mathScores', JSON.stringify(updatedScores));
-  
+
     // ✅ Convert score to 100 scale
     const scaledScore = (sc / totalQuestions) * 100;
-  
+
     // 🔁 Sync to backend
     try {
       const token = localStorage.getItem('auth_token');
@@ -140,7 +151,7 @@ const MathChapters = () => {
         {
           subject: 'Mathematics',
           chapter: selectedChapter.chapter,
-          score: Math.round(scaledScore), // round to nearest whole number
+          score: Math.round(scaledScore), 
           attemptNumber: updatedAttempts[selectedChapter._id],
           paid: false,
         },
@@ -154,8 +165,9 @@ const MathChapters = () => {
     } catch (err) {
       console.error('❌ Failed to sync attempt:', err.response?.data || err.message);
     }
+
   };
-  
+
   return (
     <div className="flex min-h-screen bg-gray-100">
       <Sidebar />
@@ -184,57 +196,37 @@ const MathChapters = () => {
                 </div>
 
                 {expanded[ch._id] && (
-                  <div className="mt-4">
-                    {/* {chapterScores[ch._id] !== undefined && (
-                      <p className="text-green-700 font-semibold">
-                        My Score: {chapterScores[ch._id]}
-                      </p>
-                    )} */}
-                   <div className="flex items-center space-x-2">
-  <button
-    onClick={() => navigate('/progress')}
-    className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
-  >
-    📊 View Progress
-  </button>
-
-  <button
-    onClick={() => setShowInstructionModal(true)}
-    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-    disabled={isLocked}
-  >
-    Take Exam
-  </button>
-</div>
-
-                    {/* {isLocked && (
-                      <button
-                        onClick={() => alert('Redirect to payment')}
-                        className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
-                      >
-                        Pay Now
-                      </button>
-                    )} */}
-                    {isLocked ? (
-  <div className="mt-2 text-red-600 font-medium">
-     Attempt limit reached. Please pay to continue.
-    <button
-      onClick={() => alert('Redirect to payment')}
-      className="mt-2 block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
-    >
-      Pay Now
-    </button>
-  </div>
-) : (
-  <button
-    onClick={() => setShowInstructionModal(true)}
-    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
-  >
-    📝 Take Exam
-  </button>
-)}
-
-                  </div>
+             <div className="mt-4">
+             <div className="mb-3">
+               <button
+                 onClick={() => navigate('/progress')}
+                 className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 w-full"
+               >
+                 📊 View Progress
+               </button>
+             </div>
+           
+             {isLocked ? (
+               <div className="text-red-600 font-medium">
+                 Attempt limit reached. Please pay to continue.
+                 <button
+                   onClick={() => handlePayment(ch._id)}
+                   className="mt-2 w-full bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+                 >
+                   Pay Now
+                 </button>
+               </div>
+             ) : (
+               <div>
+                 <button
+                   onClick={() => setShowInstructionModal(true)}
+                   className="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                 >
+                   📝 Take Exam
+                 </button>
+               </div>
+             )}
+           </div>
                 )}
               </div>
             );
