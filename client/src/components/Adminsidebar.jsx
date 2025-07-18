@@ -12,11 +12,9 @@ import { NavLink } from "react-router-dom";
 const menuItems = [
   { name: "Dashboard", path: "/admin/dashboard", icon: <FaTachometerAlt /> },
   { name: "User Management", path: "/admin/user-management", icon: <FaUserCog /> },
-  // { name: "Question Bank", path: "/admin/questions", icon: <FaQuestion /> },
   { name: "Add Questions", path: "/admin/add-question", icon: <FaPlus /> },
-  // { name: "Analytics", path: "/admin/analytics", icon: <FaChartBar /> },
-  // { name: "Help & Support", path: "/admin/support", icon: <FaLifeRing /> },
-  // { name: "Settings", path: "/admin/settings", icon: <FaCog /> },
+  { name: "Add Subjects", path: "/admin/subjects", icon: <FaChartBar /> },
+  { name: "Chapters", path: "/admin/chapters", icon: <FaLifeRing /> },
 ];
 
 const Sidebar = () => {

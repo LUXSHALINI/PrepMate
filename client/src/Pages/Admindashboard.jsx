@@ -19,7 +19,7 @@ export default function AdminDashboard() {
         
 
       
-        <div>
+        {/* <div>
           <h2 className="text-xl font-semibold text-teal-700">Quick Actions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
        
@@ -29,9 +29,9 @@ export default function AdminDashboard() {
               buttonText="Go to User Management"
               navigateTo="/users"
             />
-          </div>
+          </div> */}
         </div>
       </div>
-    </div>
+    // </div>
   );
 }

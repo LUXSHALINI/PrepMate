@@ -151,7 +151,7 @@ const MathChapters = () => {
         {
           subject: 'Mathematics',
           chapter: selectedChapter.chapter,
-          score: Math.round(scaledScore), 
+          score: Math.round(scaledScore), // round to nearest whole number
           attemptNumber: updatedAttempts[selectedChapter._id],
           paid: false,
         },
@@ -196,37 +196,34 @@ const MathChapters = () => {
                 </div>
 
                 {expanded[ch._id] && (
-             <div className="mt-4">
-             <div className="mb-3">
+               <div className="mt-4 flex gap-4 items-center">
+           
                <button
                  onClick={() => navigate('/progress')}
-                 className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 w-full"
+                 className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
                >
                  📊 View Progress
                </button>
-             </div>
-           
-             {isLocked ? (
-               <div className="text-red-600 font-medium">
-                 Attempt limit reached. Please pay to continue.
+             
+            
+               {isLocked ? (
                  <button
                    onClick={() => handlePayment(ch._id)}
-                   className="mt-2 w-full bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+                   className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
                  >
-                   Pay Now
+                  Pay Now
                  </button>
-               </div>
-             ) : (
-               <div>
+               ) : (
                  <button
                    onClick={() => setShowInstructionModal(true)}
-                   className="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                   className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
                  >
                    📝 Take Exam
                  </button>
-               </div>
-             )}
-           </div>
+               )}
+             </div>
+             
+
                 )}
               </div>
             );

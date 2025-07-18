@@ -16,12 +16,12 @@ const SubjectCard = ({ subject }) => {
           </p> */}
         </div>
         <div className="flex gap-2">
-          <button className="text-gray-500 hover:text-blue-600">
+          {/* <button className="text-gray-500 hover:text-blue-600">
             <Pencil size={18} />
           </button>
           <button className="text-gray-500 hover:text-red-600">
             <Trash size={18} />
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -34,9 +34,9 @@ const SubjectCard = ({ subject }) => {
           ></div>
         </div> */}
 
-        <p className="text-sm mt-2 text-gray-700">
+        {/* <p className="text-sm mt-2 text-gray-700">
           Topics ({subject.completedTopics || 0}/{subject.totalTopics || 0})
-        </p>
+        </p> */}
 
         <ul className="text-sm text-gray-600 mt-2 space-y-1">
           {(subject.topics || []).map((topic, idx) => (

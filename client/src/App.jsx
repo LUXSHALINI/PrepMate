@@ -12,12 +12,13 @@ import MySubjects from './Pages/MySubjects';
 import AdminDashboard from './Pages/Admindashboard';
 import UserManagementPage from './Pages/UserManagementPage';
 import UserQuestionPage from './Pages/UserQuestionPage';
-// import AdminQuestionPage from './Pages/AdminQuestionPage';
+import AdminQuestionPage from './Pages/AdminQuestionPage';
 import MathsChapters from './Pages/Mathschapter';
 import PaymentSuccess from './Pages/PaymentSuccess';
 import ProgressPage from "./Pages/ProgressPage";
 import UploadQuestions from './Pages/uploadquestion';
-
+import AllChaptersAdminPage from './Pages/AllChaptersAdminPage';
+import ScienceChapters from './Pages/scienceChapter';
 
 
 function App() {
@@ -44,9 +45,13 @@ function App() {
         <Route path="/questions" element={<UserQuestionPage />} />
        
         <Route path="/math-chapters" element={<MathsChapters />} />
+        <Route path="/science-chapters" element={<ScienceChapters />} />
+
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/progress" element={<ProgressPage />} />
         <Route path="/admin/add-question" element={<UploadQuestions />} />
+        <Route path="/admin/subjects" element={<AdminQuestionPage />} />
+        <Route path="/admin/chapters" element={<AllChaptersAdminPage />} />
 
       </Routes>
     </Router>
