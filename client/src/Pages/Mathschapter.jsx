@@ -199,7 +199,7 @@ const MathChapters = () => {
                <div className="mt-4 flex gap-4 items-center">
            
                <button
-                 onClick={() => navigate('/progress')}
+                 onClick={() => navigate("/progress", { state: { subject: "Mathematics" } })}
                  className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
                >
                  📊 View Progress

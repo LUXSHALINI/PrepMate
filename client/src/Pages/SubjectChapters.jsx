@@ -8,6 +8,7 @@ const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 const SubjectChapters = ({ subject }) => {
   const navigate = useNavigate();
+
   const [chapters, setChapters] = useState([]);
   const [questions, setQuestions] = useState({});
   const [expanded, setExpanded] = useState({});
@@ -26,8 +27,6 @@ const SubjectChapters = ({ subject }) => {
       try {
         const res = await axios.get(`http://localhost:5000/api/chapters/${subject}`);
         setChapters(res.data);
-
-        // Initialize expanded state for chapters
         const initialExpand = {};
         res.data.forEach((ch) => {
           initialExpand[ch._id] = false;
@@ -38,7 +37,6 @@ const SubjectChapters = ({ subject }) => {
       }
     };
 
-    // Load attempts and scores from localStorage
     const savedAttempts = JSON.parse(localStorage.getItem(`${subject}Attempts`) || '{}');
     const savedScores = JSON.parse(localStorage.getItem(`${subject}Scores`) || '{}');
     setAttempts(savedAttempts);
@@ -62,6 +60,10 @@ const SubjectChapters = ({ subject }) => {
   };
 
   const startExam = async () => {
+    if (!selectedChapter) {
+      alert('Please select a chapter first.');
+      return;
+    }
     await fetchQuestions(selectedChapter._id);
     setShowInstructionModal(false);
     setShowExamModal(true);
@@ -145,7 +147,9 @@ const SubjectChapters = ({ subject }) => {
           paid: false,
         },
         {
-          headers: { Authorization: `Bearer ${token}` },
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
     } catch (err) {
@@ -181,7 +185,7 @@ const SubjectChapters = ({ subject }) => {
                 {expanded[ch._id] && (
                   <div className="mt-4 flex gap-4 items-center">
                     <button
-                      onClick={() => navigate('/progress')}
+                      onClick={() => navigate("/progress", { state: { subject: "Science" } })}
                       className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
                     >
                       📊 View Progress
@@ -209,9 +213,100 @@ const SubjectChapters = ({ subject }) => {
           })
         )}
 
-        {/* Instruction Modal and Exam Modal here, same as before... */}
+        {/* Instruction Modal */}
+        {showInstructionModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded w-full max-w-lg relative">
+              <button
+                onClick={() => setShowInstructionModal(false)}
+                className="absolute top-2 right-3 text-gray-500 text-xl"
+              >
+                ×
+              </button>
+              <h2 className="text-xl font-bold mb-2">📘 Instructions</h2>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                <li>You can attempt a chapter exam up to 2 times for free.</li>
+                <li>One question will appear at a time with 4 options.</li>
+                <li>Select one correct answer and move to the next.</li>
+                <li>After submission, your score will appear immediately.</li>
+                <li>After 2 attempts, the exam will be locked unless unlocked by payment.</li>
+              </ul>
+              <div className="text-right mt-4">
+                <button
+                  onClick={startExam}
+                  className="bg-green-600 text-white px-4 py-2 rounded"
+                >
+                  ✅ Start Exam
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
-        {/* ...Your modal code here remains unchanged, but make sure you replace hardcoded 'Mathematics' with {subject} in localStorage keys*/}
+        {/* Exam Modal */}
+        {showExamModal && selectedChapter && questions[selectedChapter._id] && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded w-full max-w-xl relative">
+              <button
+                onClick={() => setShowExamModal(false)}
+                className="absolute top-2 right-3 text-gray-500 text-xl"
+              >
+                ×
+              </button>
+              {!submitted ? (
+                <>
+                  <h2 className="text-lg font-bold text-teal-700">
+                    Question {currentIndex + 1} of {questions[selectedChapter._id].length}
+                  </h2>
+                  <p className="font-medium mt-2">{questions[selectedChapter._id][currentIndex].question}</p>
+                  <div className="space-y-2 mt-2">
+                    {questions[selectedChapter._id][currentIndex].options.map((opt, i) => (
+                      <label key={i} className="block">
+                        <input
+                          type="radio"
+                          name={`q-${questions[selectedChapter._id][currentIndex]._id}`}
+                          value={opt}
+                          checked={answers[questions[selectedChapter._id][currentIndex]._id] === opt}
+                          onChange={() => handleOptionChange(questions[selectedChapter._id][currentIndex]._id, opt)}
+                          className="mr-2"
+                        />
+                        {opt}
+                      </label>
+                    ))}
+                  </div>
+                  <div className="flex justify-between mt-4">
+                    <button
+                      onClick={() => setCurrentIndex(currentIndex - 1)}
+                      disabled={currentIndex === 0}
+                      className="bg-gray-200 px-4 py-1 rounded disabled:opacity-50"
+                    >
+                      Previous
+                    </button>
+                    <button
+                      onClick={handleNext}
+                      className="bg-green-600 text-white px-4 py-1 rounded"
+                    >
+                      {currentIndex === questions[selectedChapter._id].length - 1 ? 'Finish Exam' : 'Next'}
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="text-center space-y-4">
+                  <h2 className="text-2xl font-bold text-green-700">🎉 Exam Completed!</h2>
+                  <p className="text-lg">
+                    Your Score: <span className="font-semibold">{score} / {questions[selectedChapter._id].length}</span>
+                  </p>
+                  <button
+                    onClick={() => setShowExamModal(false)}
+                    className="bg-blue-600 text-white px-6 py-2 rounded"
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );

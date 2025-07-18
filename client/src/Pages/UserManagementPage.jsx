@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AdminSidebar from '../components/Adminsidebar';
+import AdminSidebar from '../components/Adminsidebar';  // ஏற்கனவே உனக்கு உள்ள பாதை
 import {
   getAllUsers,
   createUser,
@@ -12,16 +12,14 @@ export default function UserListPage() {
   const [form, setForm] = useState({ name: '', email: '', password: '', role: 'user' });
   const [editingId, setEditingId] = useState(null);
 
-  // ✅ Fetch users safely
   const fetchUsers = async () => {
     try {
       const res = await getAllUsers();
-      // Validate response structure
       const data = res?.data;
-      setUsers(Array.isArray(data) ? data : []); // Safe fallback
+      setUsers(Array.isArray(data) ? data : []);
     } catch (err) {
       console.error('Fetch failed:', err);
-      setUsers([]); // fallback
+      setUsers([]);
     }
   };
 
@@ -62,54 +60,59 @@ export default function UserListPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
-      <h1 className="text-2xl font-bold text-teal-700">User Management</h1>
+    <div className="flex min-h-screen bg-gray-100">
+      {/* Sidebar here */}
+      <AdminSidebar />
 
+      {/* Main content */}
+      <main className="flex-1 p-6 space-y-8">
+        <h1 className="text-2xl font-bold text-teal-700">User Management</h1>
 
-      {/* Users Table */}
-      <div className="overflow-x-auto bg-white shadow rounded">
-        <table className="w-full text-left">
-          <thead className="bg-teal-600 text-white">
-            <tr>
-              <th className="px-4 py-2">Name</th>
-              <th className="px-4 py-2">Email</th>
-              <th className="px-4 py-2">Role</th>
-              <th className="px-4 py-2 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Array.isArray(users) && users.length > 0 ? (
-              users.map((user) => (
-                <tr key={user._id} className="border-t hover:bg-gray-50">
-                  <td className="px-4 py-2">{user.name}</td>
-                  <td className="px-4 py-2">{user.email}</td>
-                  <td className="px-4 py-2 capitalize">{user.role}</td>
-                  <td className="px-4 py-2 text-right space-x-2">
-                    <button
-                      onClick={() => handleEdit(user)}
-                      className="text-blue-600 hover:underline"
-                    >
-                      Edit
-                    </button>
-                    <button
-                      onClick={() => handleDelete(user._id)}
-                      className="text-red-600 hover:underline"
-                    >
-                      Delete
-                    </button>
+        {/* Users Table */}
+        <div className="overflow-x-auto bg-white shadow rounded">
+          <table className="w-full text-left">
+            <thead className="bg-teal-600 text-white">
+              <tr>
+                <th className="px-4 py-2">Name</th>
+                <th className="px-4 py-2">Email</th>
+                <th className="px-4 py-2">Role</th>
+                <th className="px-4 py-2 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Array.isArray(users) && users.length > 0 ? (
+                users.map((user) => (
+                  <tr key={user._id} className="border-t hover:bg-gray-50">
+                    <td className="px-4 py-2">{user.name}</td>
+                    <td className="px-4 py-2">{user.email}</td>
+                    <td className="px-4 py-2 capitalize">{user.role}</td>
+                    <td className="px-4 py-2 text-right space-x-2">
+                      <button
+                        onClick={() => handleEdit(user)}
+                        className="text-blue-600 hover:underline"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        onClick={() => handleDelete(user._id)}
+                        className="text-red-600 hover:underline"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="4" className="text-center py-4 text-gray-500">
+                    No users found.
                   </td>
                 </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="4" className="text-center py-4 text-gray-500">
-                  No users found.
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   );
 }

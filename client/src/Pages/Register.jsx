@@ -1,10 +1,11 @@
+// src/pages/Register.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-// import { useAuth } from '../context/AuthContext';
+// import { useAuth } from '../context/AuthContext';  // <-- Correct import
 
 const Register = () => {
-  const { login } = useAuth(); // Fix: Call useAuth() with ()
+  const { login } = useAuth();  // useAuth hook usage
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ const Register = () => {
 
       if (res.status === 201) {
         const userData = res.data; 
-        login(userData); 
+        login(userData);  // Update auth state on login
 
         if (formData.role === 'admin') {
           navigate('/admin-dashboard');

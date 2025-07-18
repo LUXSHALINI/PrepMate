@@ -19,7 +19,7 @@ import ProgressPage from "./Pages/ProgressPage";
 import UploadQuestions from './Pages/uploadquestion';
 import AllChaptersAdminPage from './Pages/AllChaptersAdminPage';
 import ScienceChapters from './Pages/scienceChapter';
-
+// import ScienceProgress from './Pages/scienceprogress';
 
 function App() {
   return (
