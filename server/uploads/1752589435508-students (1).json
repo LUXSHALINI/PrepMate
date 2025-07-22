@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "age": 21,
+    "gender": "Female",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "zip": "10001"
+    },
+    "courses": [
+      {
+        "name": "Mathematics",
+        "score": 88
+      },
+      {
+        "name": "English",
+        "score": 92
+      }
+    ],
+    "enrolledDate": "2024-08-15T00:00:00Z",
+    "isActive": true
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "age": 23,
+    "gender": "Male",
+    "address": {
+      "street": "456 Park Ave",
+      "city": "Chicago",
+      "zip": "60601"
+    },
+    "courses": [
+      {
+        "name": "Physics",
+        "score": 75
+      },
+      {
+        "name": "Chemistry",
+        "score": 82
+      }
+    ],
+    "enrolledDate": "2024-09-01T00:00:00Z",
+    "isActive": false
+  },
+  {
+    "name": "Clara Lee",
+    "email": "clara.lee@example.com",
+    "age": 20,
+    "gender": "Female",
+    "address": {
+      "street": "789 Ocean Dr",
+      "city": "San Francisco",
+      "zip": "94107"
+    },
+    "courses": [
+      {
+        "name": "Computer Science",
+        "score": 95
+      },
+      {
+        "name": "Art",
+        "score": 89
+      }
+    ],
+    "enrolledDate": "2024-07-10T00:00:00Z",
+    "isActive": true
+  }
+]

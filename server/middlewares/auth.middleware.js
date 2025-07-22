@@ -1,22 +1,37 @@
+// middlewares/auth.middleware.js
 import { verifyToken } from '../config/jwt.js';
 
-// ✅ Named export: protect middleware
-// export const protect = (req, res, next) => {
-//   try {
-//     const authHeader = req.headers.authorization;
-//     if (!authHeader || !authHeader.startsWith('Bearer ')) {
-//       return res.status(401).json({ error: 'Unauthorized: No token provided' });
-//     }
+export const protect = (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
 
-//     const token = authHeader.split(' ')[1];
-//     const decoded = verifyToken(token); // your jwt.verify logic
-//     req.user = decoded;
-//     next();
-//   } catch (err) {
-//     console.error('JWT verification failed:', err.message);
-//     res.status(401).json({ error: 'Unauthorized: Invalid token' });
-//   }
-// };
+    // ✅ Check if auth header exists and starts with "Bearer"
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ error: 'Unauthorized: No token provided' });
+    }
+
+    const token = authHeader.split(' ')[1];
+
+    // ✅ Verify token
+    const decoded = verifyToken(token); // should include `id`, `role`, etc.
+
+    // ✅ Safety check: make sure decoded contains id
+    if (!decoded || !decoded.id) {
+      return res.status(401).json({ error: 'Invalid token: user ID missing' });
+    }
+
+    // ✅ Attach decoded user to req
+    req.user = decoded;
+
+    console.log("🔐 Authenticated user:", decoded); // Helpful debug
+
+    next();
+  } catch (err) {
+    console.error('❌ JWT verification failed:', err.message);
+    return res.status(401).json({ error: 'Unauthorized: Invalid or expired token' });
+  }
+};
+
 
 // ✅ Named export: isAdmin middleware
 export const isAdmin = (req, res, next) => {
@@ -27,16 +42,6 @@ export const isAdmin = (req, res, next) => {
   }
 };
 
-export const protect = (req, res, next) => {
-  const authHeader = req.headers.authorization;
 
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return res.status(401).json({ error: 'Unauthorized: No token' });
-  }
 
-  const token = authHeader.split(' ')[1];
-  const decoded = verifyToken(token); // jwt.verify or your logic
-  req.user = decoded;
-  next();
-};
 

@@ -1,39 +1,31 @@
 import mongoose from 'mongoose';
 
-const paymentSchema = new mongoose.Schema({
+const PaymentSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    required: true,
+    required: true
+  },
+  chapterId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Chapter',
+    required: true
   },
   amount: {
     type: Number,
-    required: true,
+    default: 49
   },
-  currency: {
-    type: String,
-    default: 'LKR', // or 'INR' or 'USD' depending on your region
+  paid: {
+    type: Boolean,
+    default: false
   },
-  status: {
-    type: String,
-    enum: ['pending', 'success', 'failed'],
-    default: 'pending',
+  sessionId: {
+    type: String
   },
-  provider: {
-    type: String,
-    enum: ['stripe', 'razorpay'],
-    required: true,
-  },
-  paymentIntentId: {
-    type: String, // For Stripe
-  },
-  razorpayPaymentId: {
-    type: String, // For Razorpay
-  },
-  createdAt: {
+  timestamp: {
     type: Date,
-    default: Date.now,
-  },
+    default: Date.now
+  }
 });
 
-export default mongoose.model('Payment', paymentSchema);
+export default mongoose.model('Payment', PaymentSchema);

@@ -73,3 +73,20 @@ export const addFeedback = async (req, res, next) => {
   }
 };
 
+// controller
+export const getChapterQuestions = async (req, res) => {
+  try {
+    const { subject, chapter } = req.params;
+
+    const subj = await Subject.findOne({ name: subject });
+    if (!subj) return res.status(404).json({ message: 'Subject not found' });
+
+    const chapterData = subj.chapters.find(ch => ch.chapterName === chapter);
+    if (!chapterData) return res.status(404).json({ message: 'Chapter not found' });
+
+    return res.status(200).json(chapterData.questions);
+  } catch (error) {
+    console.error('Get questions error:', error);
+    return res.status(500).json({ message: 'Server error while fetching questions.' });
+  }
+};

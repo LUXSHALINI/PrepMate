@@ -1,0 +1,2022 @@
+{
+  "Introduction to Biology": [
+    {
+      "question": "Which of the following is a living thing?",
+      "options": [
+        "Rock",
+        "Air",
+        "Tree",
+        "Water"
+      ],
+      "correctAnswer": "Tree"
+    },
+    {
+      "question": "Sample question 2 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Matter and Its Nature?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Cell Structure and Function": [
+    {
+      "question": "Sample question 1 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Cell Structure and Function?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Diversity in Living Organisms": [
+    {
+      "question": "Sample question 1 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Diversity in Living Organisms?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Motion": [
+    {
+      "question": "Sample question 1 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Force and Laws of Motion": [
+    {
+      "question": "Sample question 1 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Force and Laws of Motion?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Gravitation": [
+    {
+      "question": "Sample question 1 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Gravitation?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Work and Energy": [
+    {
+      "question": "Sample question 1 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Work and Energy?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Sound": [
+    {
+      "question": "Sample question 1 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Sound?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Natural Resources": [
+    {
+      "question": "Sample question 1 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Natural Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ],
+  "Improvement in Food Resources": [
+    {
+      "question": "Sample question 1 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 2 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 3 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 4 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 5 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 6 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 7 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 8 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 9 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 10 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 11 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 12 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 13 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 14 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 15 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 16 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 17 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 18 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 19 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    },
+    {
+      "question": "Sample question 20 for Improvement in Food Resources?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": "Option A"
+    }
+  ]
+}

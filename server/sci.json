@@ -1,0 +1,28 @@
+[
+    {
+      "chapter": "Matter and Its Nature",
+      "questions": [
+        {
+          "question": "Sample question 1 for Matter and Its Nature?",
+          "options": ["Option A", "Option B", "Option C", "Option D"],
+          "correctAnswer": "Option A"
+        },
+        {
+          "question": "Sample question 2 for Matter and Its Nature?",
+          "options": ["Option A", "Option B", "Option C", "Option D"],
+          "correctAnswer": "Option A"
+        }
+      ]
+    },
+    {
+      "chapter": "Atoms and Molecules",
+      "questions": [
+        {
+          "question": "Sample question 1 for Atoms and Molecules?",
+          "options": ["Option A", "Option B", "Option C", "Option D"],
+          "correctAnswer": "Option A"
+        }
+      ]
+    }
+  ]
+  

@@ -31,7 +31,7 @@ export const checkSubscription = async (req, res) => {
     const today = dayjs();
     const daysUsed = today.diff(startDate, 'day');
     const trialExpired = daysUsed >= 15;
-
+  
     res.status(200).json({
       trialExpired,
       daysUsed,

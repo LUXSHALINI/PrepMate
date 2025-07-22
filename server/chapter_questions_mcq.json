@@ -1,0 +1,716 @@
+{
+  "Sets and Functions": [
+    {
+      "question": "Represent the set of natural numbers less than 10 using the roster form.",
+      "options": [
+        "Find the cardinality (number of elements) of the set: B = {2, 4, 6, 8, 10}.",
+        "Represent the set of natural numbers less than 10 using the roster form.",
+        "Show that the function f(x) = 2x + 3 is one-one.",
+        "Define a function f: ℕ → ℕ by f(x) = 2x. List f(1) to f(5)."
+      ],
+      "correctAnswer": "Represent the set of natural numbers less than 10 using the roster form."
+    },
+    {
+      "question": "Write the set of all prime numbers between 10 and 30 in set-builder form.",
+      "options": [
+        "Represent the set of natural numbers less than 10 using the roster form.",
+        "Let f(x) = x + 1, g(x) = x^2. Find (g ∘ f)(2) and (f ∘ g)(2).",
+        "Show that the function f(x) = 2x + 3 is one-one.",
+        "Write the set of all prime numbers between 10 and 30 in set-builder form."
+      ],
+      "correctAnswer": "Write the set of all prime numbers between 10 and 30 in set-builder form."
+    },
+    {
+      "question": "If A = {x : x is a letter in the word 'MATH'}, list the elements of set A.",
+      "options": [
+        "Write the set of all prime numbers between 10 and 30 in set-builder form.",
+        "If A = {x : x is a letter in the word 'MATH'}, list the elements of set A.",
+        "Find the cardinality (number of elements) of the set: B = {2, 4, 6, 8, 10}.",
+        "If f(x) = x^2 + 1, find the value of: a) f(2), b) f(-1), c) f(0)"
+      ],
+      "correctAnswer": "If A = {x : x is a letter in the word 'MATH'}, list the elements of set A."
+    },
+    {
+      "question": "Find the cardinality (number of elements) of the set: B = {2, 4, 6, 8, 10}.",
+      "options": [
+        "Represent the set of natural numbers less than 10 using the roster form.",
+        "If U = {1 to 10}, and A = {2, 4, 6, 8}, find the complement of A in U.",
+        "If f(x) = x^2 + 1, find the value of: a) f(2), b) f(-1), c) f(0)",
+        "Find the cardinality (number of elements) of the set: B = {2, 4, 6, 8, 10}."
+      ],
+      "correctAnswer": "Find the cardinality (number of elements) of the set: B = {2, 4, 6, 8, 10}."
+    },
+    {
+      "question": "Determine whether the following sets are equal or not: A = {1, 2, 3}, B = {3, 2, 1}.",
+      "options": [
+        "Is the function f(x) = x^2 an onto function when f: ℝ → ℝ? Justify.",
+        "Show that the function f(x) = 2x + 3 is one-one.",
+        "Determine whether the following sets are equal or not: A = {1, 2, 3}, B = {3, 2, 1}.",
+        "Draw a Venn diagram showing two overlapping sets A and B, and shade A ∪ B."
+      ],
+      "correctAnswer": "Determine whether the following sets are equal or not: A = {1, 2, 3}, B = {3, 2, 1}."
+    },
+    {
+      "question": "Let A = {1,2,3,4} and B = {3,4,5,6}. Find: a) A ∪ B, b) A ∩ B, c) A - B, d) B - A",
+      "options": [
+        "If f(x) = x^2 + 1, find the value of: a) f(2), b) f(-1), c) f(0)",
+        "If A = {a, b}, B = {1, 2}, write the Cartesian Product A × B.",
+        "If f(x) = 3x, find its inverse function f⁻¹(x).",
+        "Let A = {1,2,3,4} and B = {3,4,5,6}. Find: a) A ∪ B, b) A ∩ B, c) A - B, d) B - A"
+      ],
+      "correctAnswer": "Let A = {1,2,3,4} and B = {3,4,5,6}. Find: a) A ∪ B, b) A ∩ B, c) A - B, d) B - A"
+    },
+    {
+      "question": "If U = {1 to 10}, and A = {2, 4, 6, 8}, find the complement of A in U.",
+      "options": [
+        "If U = {1 to 10}, and A = {2, 4, 6, 8}, find the complement of A in U.",
+        "If f(x) = x^2 + 1, find the value of: a) f(2), b) f(-1), c) f(0)",
+        "Give an example of a function which is neither one-one nor onto.",
+        "If A = {x : x is a letter in the word 'MATH'}, list the elements of set A."
+      ],
+      "correctAnswer": "If U = {1 to 10}, and A = {2, 4, 6, 8}, find the complement of A in U."
+    },
+    {
+      "question": "Draw a Venn diagram showing two overlapping sets A and B, and shade A ∪ B.",
+      "options": [
+        "Is the function f(x) = x^2 an onto function when f: ℝ → ℝ? Justify.",
+        "Draw a Venn diagram showing two overlapping sets A and B, and shade A ∪ B.",
+        "Determine whether the following sets are equal or not: A = {1, 2, 3}, B = {3, 2, 1}.",
+        "If f(x) = x^2 + 1, find the value of: a) f(2), b) f(-1), c) f(0)"
+      ],
+      "correctAnswer": "Draw a Venn diagram showing two overlapping sets A and B, and shade A ∪ B."
+    },
+    {
+      "question": "Show using a Venn diagram that: (A ∪ B)' = A' ∩ B'",
+      "options": [
+        "Find the domain and range of the function f(x) = 1/(x-2).",
+        "Show that the function f(x) = 2x + 3 is one-one.",
+        "Show using a Venn diagram that: (A ∪ B)' = A' ∩ B'",
+        "Give an example of a function which is neither one-one nor onto."
+      ],
+      "correctAnswer": "Show using a Venn diagram that: (A ∪ B)' = A' ∩ B'"
+    },
+    {
+      "question": "If A = {a, b}, B = {1, 2}, write the Cartesian Product A × B.",
+      "options": [
+        "Draw a Venn diagram showing two overlapping sets A and B, and shade A ∪ B.",
+        "Determine whether the following sets are equal or not: A = {1, 2, 3}, B = {3, 2, 1}.",
+        "Represent the set of natural numbers less than 10 using the roster form.",
+        "If A = {a, b}, B = {1, 2}, write the Cartesian Product A × B."
+      ],
+      "correctAnswer": "If A = {a, b}, B = {1, 2}, write the Cartesian Product A × B."
+    }
+  ],
+  "Sequences and Series": [
+    {
+      "question": "Define a sequence. Give an example of a finite and infinite sequence.",
+      "options": [
+        "Define a sequence. Give an example of a finite and infinite sequence.",
+        "In a GP, the 3rd term is 16 and the 6th term is 128. Find the first term and common ratio.",
+        "Define Geometric Progression with an example.",
+        "Determine whether the sequence 1/2, 1/4, 1/8, 1/16, … is arithmetic or geometric. Justify."
+      ],
+      "correctAnswer": "Define a sequence. Give an example of a finite and infinite sequence."
+    },
+    {
+      "question": "Write the first five terms of the sequence defined by a_n = 2n - 1.",
+      "options": [
+        "Find the sum of the first 5 terms of the GP: 1, 3, 9, 27, …",
+        "In an AP, if the first term is 4 and common difference is 3, find the 15th term.",
+        "Write the first five terms of the sequence defined by a_n = 2n - 1.",
+        "Find the general term a_n of the sequence: 3, 6, 9, 12, …"
+      ],
+      "correctAnswer": "Write the first five terms of the sequence defined by a_n = 2n - 1."
+    },
+    {
+      "question": "Find the general term a_n of the sequence: 3, 6, 9, 12, …",
+      "options": [
+        "In an AP, if the first term is 4 and common difference is 3, find the 15th term.",
+        "In a GP, the 3rd term is 16 and the 6th term is 128. Find the first term and common ratio.",
+        "Find the sum of the first 5 terms of the GP: 1, 3, 9, 27, …",
+        "Find the general term a_n of the sequence: 3, 6, 9, 12, …"
+      ],
+      "correctAnswer": "Find the general term a_n of the sequence: 3, 6, 9, 12, …"
+    },
+    {
+      "question": "Determine whether the sequence 1/2, 1/4, 1/8, 1/16, … is arithmetic or geometric. Justify.",
+      "options": [
+        "Define a sequence. Give an example of a finite and infinite sequence.",
+        "Determine whether the sequence 1/2, 1/4, 1/8, 1/16, … is arithmetic or geometric. Justify.",
+        "Find three numbers in AP whose sum is 15 and product is 105.",
+        "How many terms of the GP 2, 4, 8, … are less than 1000?"
+      ],
+      "correctAnswer": "Determine whether the sequence 1/2, 1/4, 1/8, 1/16, … is arithmetic or geometric. Justify."
+    },
+    {
+      "question": "Find the 10th term of the arithmetic sequence: 5, 9, 13, 17, …",
+      "options": [
+        "Find the 10th term of the arithmetic sequence: 5, 9, 13, 17, …",
+        "Find the 6th term of the GP: 3, 6, 12, 24, …",
+        "In a GP, the 3rd term is 16 and the 6th term is 128. Find the first term and common ratio.",
+        "If a sequence is given by a_n = 5n^2 - 3n, find a_1, a_2, a_3."
+      ],
+      "correctAnswer": "Find the 10th term of the arithmetic sequence: 5, 9, 13, 17, …"
+    },
+    {
+      "question": "If a sequence is given by a_n = 5n^2 - 3n, find a_1, a_2, a_3.",
+      "options": [
+        "If a sequence is given by a_n = 5n^2 - 3n, find a_1, a_2, a_3.",
+        "Which term of the AP: 7, 10, 13, … is 67?",
+        "Prove that the product of three consecutive terms in GP is equal to the cube of the middle term.",
+        "Find the general term a_n of the sequence: 3, 6, 9, 12, …"
+      ],
+      "correctAnswer": "If a sequence is given by a_n = 5n^2 - 3n, find a_1, a_2, a_3."
+    },
+    {
+      "question": "Define recursive formula with an example.",
+      "options": [
+        "Define a sequence. Give an example of a finite and infinite sequence.",
+        "If the sum of infinite GP is 8 and first term is 4, find the common ratio.",
+        "Find the sum of the first 20 terms of the AP: 2, 5, 8, 11, …",
+        "Define recursive formula with an example."
+      ],
+      "correctAnswer": "Define recursive formula with an example."
+    },
+    {
+      "question": "Which term of the AP: 7, 10, 13, … is 67?",
+      "options": [
+        "Find the sum of the first 5 terms of the GP: 1, 3, 9, 27, …",
+        "Which term of the AP: 7, 10, 13, … is 67?",
+        "Define Geometric Progression with an example.",
+        "Define recursive formula with an example."
+      ],
+      "correctAnswer": "Which term of the AP: 7, 10, 13, … is 67?"
+    },
+    {
+      "question": "Find the sum of the first 20 terms of the AP: 2, 5, 8, 11, …",
+      "options": [
+        "Which term of the AP: 7, 10, 13, … is 67?",
+        "Find the sum of the first 20 terms of the AP: 2, 5, 8, 11, …",
+        "Find the general term a_n of the sequence: 3, 6, 9, 12, …",
+        "In an AP, if the first term is 4 and common difference is 3, find the 15th term."
+      ],
+      "correctAnswer": "Find the sum of the first 20 terms of the AP: 2, 5, 8, 11, …"
+    },
+    {
+      "question": "In an AP, if the first term is 4 and common difference is 3, find the 15th term.",
+      "options": [
+        "In an AP, if the first term is 4 and common difference is 3, find the 15th term.",
+        "Find the 6th term of the GP: 3, 6, 12, 24, …",
+        "Define Geometric Progression with an example.",
+        "Which term of the AP: 7, 10, 13, … is 67?"
+      ],
+      "correctAnswer": "In an AP, if the first term is 4 and common difference is 3, find the 15th term."
+    }
+  ],
+  "Geometry": [
+    {
+      "question": "Define adjacent angles and give a real-life example.",
+      "options": [
+        "In a circle, two chords AB and CD intersect at point E inside the circle. Prove: AE·EB = CE·ED",
+        "In a parallelogram, one angle is 70°. Find the remaining angles.",
+        "Define adjacent angles and give a real-life example.",
+        "In triangle PQR, if PQ = QR and ∠P = 50°, find all angles of the triangle."
+      ],
+      "correctAnswer": "Define adjacent angles and give a real-life example."
+    },
+    {
+      "question": "If two angles form a linear pair and one is 70°, find the other.",
+      "options": [
+        "Define adjacent angles and give a real-life example.",
+        "In a parallelogram, one angle is 70°. Find the remaining angles.",
+        "Define congruent triangles. State the SAS congruence rule.",
+        "If two angles form a linear pair and one is 70°, find the other."
+      ],
+      "correctAnswer": "If two angles form a linear pair and one is 70°, find the other."
+    },
+    {
+      "question": "In a triangle ABC, if ∠A = 60°, ∠B = 70°, find ∠C.",
+      "options": [
+        "Prove: In an isosceles triangle, the angles opposite to equal sides are equal.",
+        "In a triangle ABC, if ∠A = 60°, ∠B = 70°, find ∠C.",
+        "Find the coordinates of the point which divides the line joining A(2, -3) and B(4, 3) in the ratio 2:1.",
+        "Prove: The angle subtended by an arc at the centre is twice the angle subtended on the remaining part of the circle."
+      ],
+      "correctAnswer": "In a triangle ABC, if ∠A = 60°, ∠B = 70°, find ∠C."
+    },
+    {
+      "question": "State and prove the angle sum property of a triangle.",
+      "options": [
+        "Define a cyclic quadrilateral. State the property of opposite angles.",
+        "Derive the distance formula between two points in 2D.",
+        "State and prove the angle sum property of a triangle.",
+        "Find the midpoint of the line joining (4, 5) and (8, 9)."
+      ],
+      "correctAnswer": "State and prove the angle sum property of a triangle."
+    },
+    {
+      "question": "Prove that the exterior angle of a triangle is equal to the sum of the two interior opposite angles.",
+      "options": [
+        "State and prove the angle sum property of a triangle.",
+        "Prove that the exterior angle of a triangle is equal to the sum of the two interior opposite angles.",
+        "Prove that the points A(2, 3), B(4, 7), and C(6, 11) are collinear.",
+        "Find the coordinates of the point which divides the line joining A(2, -3) and B(4, 3) in the ratio 2:1."
+      ],
+      "correctAnswer": "Prove that the exterior angle of a triangle is equal to the sum of the two interior opposite angles."
+    },
+    {
+      "question": "Define congruent triangles. State the SAS congruence rule.",
+      "options": [
+        "Prove: The angle subtended by an arc at the centre is twice the angle subtended on the remaining part of the circle.",
+        "Find the distance between the points A(2, 3) and B(6, 7).",
+        "Define congruent triangles. State the SAS congruence rule.",
+        "Find the area of the triangle whose vertices are A(1, 2), B(4, 6), and C(6, 2)."
+      ],
+      "correctAnswer": "Define congruent triangles. State the SAS congruence rule."
+    },
+    {
+      "question": "In triangle PQR, if PQ = QR and ∠P = 50°, find all angles of the triangle.",
+      "options": [
+        "In triangle PQR, if PQ = QR and ∠P = 50°, find all angles of the triangle.",
+        "Define a cyclic quadrilateral. State the property of opposite angles.",
+        "In a triangle ABC, if ∠A = 60°, ∠B = 70°, find ∠C.",
+        "Define a parallelogram and list any 3 properties."
+      ],
+      "correctAnswer": "In triangle PQR, if PQ = QR and ∠P = 50°, find all angles of the triangle."
+    },
+    {
+      "question": "Prove: In an isosceles triangle, the angles opposite to equal sides are equal.",
+      "options": [
+        "In a parallelogram, one angle is 70°. Find the remaining angles.",
+        "Prove: In an isosceles triangle, the angles opposite to equal sides are equal.",
+        "Prove: The angle subtended by an arc at the centre is twice the angle subtended on the remaining part of the circle.",
+        "Define a parallelogram and list any 3 properties."
+      ],
+      "correctAnswer": "Prove: In an isosceles triangle, the angles opposite to equal sides are equal."
+    },
+    {
+      "question": "Define a parallelogram and list any 3 properties.",
+      "options": [
+        "Find the coordinates of the point which divides the line joining A(2, -3) and B(4, 3) in the ratio 2:1.",
+        "Derive the distance formula between two points in 2D.",
+        "Prove: In an isosceles triangle, the angles opposite to equal sides are equal.",
+        "Define a parallelogram and list any 3 properties."
+      ],
+      "correctAnswer": "Define a parallelogram and list any 3 properties."
+    },
+    {
+      "question": "In a parallelogram, one angle is 70°. Find the remaining angles.",
+      "options": [
+        "In a triangle ABC, if ∠A = 60°, ∠B = 70°, find ∠C.",
+        "In a parallelogram, one angle is 70°. Find the remaining angles.",
+        "Find the coordinates of the point which divides the line joining A(2, -3) and B(4, 3) in the ratio 2:1.",
+        "Define adjacent angles and give a real-life example."
+      ],
+      "correctAnswer": "In a parallelogram, one angle is 70°. Find the remaining angles."
+    }
+  ],
+  "Trigonometry": [
+    {
+      "question": "Define the six basic trigonometric ratios for an acute angle in a right-angled triangle.",
+      "options": [
+        "Two poles of height 12 m and 18 m are 30 m apart. Find the distance between their tops.",
+        "Define the six basic trigonometric ratios for an acute angle in a right-angled triangle.",
+        "The angle of elevation of the top of a tree from a point 20 m away is 60°. Find the height of the tree.",
+        "Prove the identity: sin²θ + cos²θ = 1"
+      ],
+      "correctAnswer": "Define the six basic trigonometric ratios for an acute angle in a right-angled triangle."
+    },
+    {
+      "question": "If sin θ = 3/5, and θ is acute, find cos θ and tan θ.",
+      "options": [
+        "The angle of elevation of the top of a tree from a point 20 m away is 60°. Find the height of the tree.",
+        "Draw the graph of y = sin x for x ∈ [0°, 360°].",
+        "Find the value of: sin⁻¹(√2/2)",
+        "If sin θ = 3/5, and θ is acute, find cos θ and tan θ."
+      ],
+      "correctAnswer": "If sin θ = 3/5, and θ is acute, find cos θ and tan θ."
+    },
+    {
+      "question": "Prove the identity: sin²θ + cos²θ = 1",
+      "options": [
+        "Prove the identity: sin²θ + cos²θ = 1",
+        "Solve for θ ∈ [0°, 360°]: sin θ = √3/2",
+        "Determine all angles θ ∈ [0°, 360°] such that cot θ = -1",
+        "Prove that: (1 - cos 2A)/sin 2A = tan A"
+      ],
+      "correctAnswer": "Prove the identity: sin²θ + cos²θ = 1"
+    },
+    {
+      "question": "Show that: 1 + tan²θ = sec²θ",
+      "options": [
+        "Find the value of: sin 45° + cos 30°",
+        "Solve for θ ∈ [0°, 360°]: sin θ = √3/2",
+        "Show that: 1 + tan²θ = sec²θ",
+        "Evaluate: tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3)"
+      ],
+      "correctAnswer": "Show that: 1 + tan²θ = sec²θ"
+    },
+    {
+      "question": "Prove that: (1 - cos 2A)/sin 2A = tan A",
+      "options": [
+        "Draw the graph of y = sin x for x ∈ [0°, 360°].",
+        "Prove that: (1 - cos 2A)/sin 2A = tan A",
+        "Find the general solution of tan x = 1.",
+        "A ladder is leaning against a wall at an angle of 60°. If the foot is 5 m away from the wall, find the length of the ladder."
+      ],
+      "correctAnswer": "Prove that: (1 - cos 2A)/sin 2A = tan A"
+    },
+    {
+      "question": "Find the value of: sin 45° + cos 30°",
+      "options": [
+        "Find the value of: sin 45° + cos 30°",
+        "Prove the identity: sin²θ + cos²θ = 1",
+        "Simplify: (sin x)/(1 + cos x) + (sin x)/(1 - cos x)",
+        "Prove that: (1 - cos 2A)/sin 2A = tan A"
+      ],
+      "correctAnswer": "Find the value of: sin 45° + cos 30°"
+    },
+    {
+      "question": "Find the principal value of cos⁻¹(1/2)",
+      "options": [
+        "Find the principal value of cos⁻¹(1/2)",
+        "Define the six basic trigonometric ratios for an acute angle in a right-angled triangle.",
+        "The angle of elevation of the top of a tree from a point 20 m away is 60°. Find the height of the tree.",
+        "If sin θ = 3/5, and θ is acute, find cos θ and tan θ."
+      ],
+      "correctAnswer": "Find the principal value of cos⁻¹(1/2)"
+    },
+    {
+      "question": "Simplify: (sin x)/(1 + cos x) + (sin x)/(1 - cos x)",
+      "options": [
+        "Find the value of: sin⁻¹(√2/2)",
+        "Simplify: (sin x)/(1 + cos x) + (sin x)/(1 - cos x)",
+        "From the top of a tower 50 m high, the angle of depression of a car on the ground is 30°. Find the distance of the car from the base of the tower.",
+        "The angle of elevation of the top of a tree from a point 20 m away is 60°. Find the height of the tree."
+      ],
+      "correctAnswer": "Simplify: (sin x)/(1 + cos x) + (sin x)/(1 - cos x)"
+    },
+    {
+      "question": "Solve for θ ∈ [0°, 360°]: sin θ = √3/2",
+      "options": [
+        "Solve for θ ∈ [0°, 360°]: sin θ = √3/2",
+        "Evaluate: tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3)",
+        "Prove the identity: sin²θ + cos²θ = 1",
+        "Prove that: (1 - cos 2A)/sin 2A = tan A"
+      ],
+      "correctAnswer": "Solve for θ ∈ [0°, 360°]: sin θ = √3/2"
+    },
+    {
+      "question": "Solve: 2cos²x - 1 = 0",
+      "options": [
+        "Two poles of height 12 m and 18 m are 30 m apart. Find the distance between their tops.",
+        "Solve: 2cos²x - 1 = 0",
+        "From the top of a tower 50 m high, the angle of depression of a car on the ground is 30°. Find the distance of the car from the base of the tower.",
+        "Draw the graph of y = sin x for x ∈ [0°, 360°]."
+      ],
+      "correctAnswer": "Solve: 2cos²x - 1 = 0"
+    }
+  ],
+  "Algebra": [
+    {
+      "question": "Find the quotient and remainder when f(x) = x^3 - 2x^2 + 4 is divided by x - 1.",
+      "options": [
+        "Find the roots of x^2 + 2x + 5 = 0. Comment on the nature of roots.",
+        "Find the quotient and remainder when f(x) = x^3 - 2x^2 + 4 is divided by x - 1.",
+        "Simplify: (3 + 2i)(2 - 5i)",
+        "Simplify: (x^2 - 9)/(x^2 - x - 6)"
+      ],
+      "correctAnswer": "Find the quotient and remainder when f(x) = x^3 - 2x^2 + 4 is divided by x - 1."
+    },
+    {
+      "question": "Factorize: x^3 + 3x^2 - x - 3",
+      "options": [
+        "Show that if the roots of ax^2 + bx + c = 0 are equal, then b² = 4ac.",
+        "Find the term independent of x in the expansion of (x^2 + 1/x)^6",
+        "If z = 4 + 3i, find the modulus and argument of z.",
+        "Factorize: x^3 + 3x^2 - x - 3"
+      ],
+      "correctAnswer": "Factorize: x^3 + 3x^2 - x - 3"
+    },
+    {
+      "question": "If x = 2 is a root of the polynomial x^3 - 3x^2 + x + 1, find the remaining roots.",
+      "options": [
+        "Find the quotient and remainder when f(x) = x^3 - 2x^2 + 4 is divided by x - 1.",
+        "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line.",
+        "Show that i^4 = 1 and find i^25",
+        "If x = 2 is a root of the polynomial x^3 - 3x^2 + x + 1, find the remaining roots."
+      ],
+      "correctAnswer": "If x = 2 is a root of the polynomial x^3 - 3x^2 + x + 1, find the remaining roots."
+    },
+    {
+      "question": "Simplify: (x^2 - 9)/(x^2 - x - 6)",
+      "options": [
+        "Simplify: (x^2 - 9)/(x^2 - x - 6)",
+        "Solve the quadratic equation: 2x^2 - 5x + 3 = 0",
+        "Simplify: (3 + 2i)(2 - 5i)",
+        "Solve: (1/(x-2)) - (1/(x+2)) = 4/(x^2 - 4)"
+      ],
+      "correctAnswer": "Simplify: (x^2 - 9)/(x^2 - x - 6)"
+    },
+    {
+      "question": "Divide f(x) = 3x^2 + 2x - 1 by g(x) = x + 1 and find the quotient.",
+      "options": [
+        "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line.",
+        "Divide f(x) = 3x^2 + 2x - 1 by g(x) = x + 1 and find the quotient.",
+        "If z = 4 + 3i, find the modulus and argument of z.",
+        "Express 1/(3 - 2i) in the form a + bi"
+      ],
+      "correctAnswer": "Divide f(x) = 3x^2 + 2x - 1 by g(x) = x + 1 and find the quotient."
+    },
+    {
+      "question": "Solve the quadratic equation: 2x^2 - 5x + 3 = 0",
+      "options": [
+        "Prove that the sum of the binomial coefficients in the expansion of (1 + x)^n is 2^n",
+        "Find the coefficient of x^3 in the expansion of (2x - 1)^5",
+        "Solve the quadratic equation: 2x^2 - 5x + 3 = 0",
+        "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line."
+      ],
+      "correctAnswer": "Solve the quadratic equation: 2x^2 - 5x + 3 = 0"
+    },
+    {
+      "question": "Find the roots of x^2 + 2x + 5 = 0. Comment on the nature of roots.",
+      "options": [
+        "Find the roots of x^2 + 2x + 5 = 0. Comment on the nature of roots.",
+        "Simplify: (3 + 2i)(2 - 5i)",
+        "Show that i^4 = 1 and find i^25",
+        "If z = 4 + 3i, find the modulus and argument of z."
+      ],
+      "correctAnswer": "Find the roots of x^2 + 2x + 5 = 0. Comment on the nature of roots."
+    },
+    {
+      "question": "Show that if the roots of ax^2 + bx + c = 0 are equal, then b² = 4ac.",
+      "options": [
+        "Find the middle term in the expansion of (1 + x)^9",
+        "Show that i^4 = 1 and find i^25",
+        "Show that if the roots of ax^2 + bx + c = 0 are equal, then b² = 4ac.",
+        "Solve: (1/(x-2)) - (1/(x+2)) = 4/(x^2 - 4)"
+      ],
+      "correctAnswer": "Show that if the roots of ax^2 + bx + c = 0 are equal, then b² = 4ac."
+    },
+    {
+      "question": "Solve: (1/(x-2)) - (1/(x+2)) = 4/(x^2 - 4)",
+      "options": [
+        "Express 1/(3 - 2i) in the form a + bi",
+        "Divide f(x) = 3x^2 + 2x - 1 by g(x) = x + 1 and find the quotient.",
+        "Solve: (1/(x-2)) - (1/(x+2)) = 4/(x^2 - 4)",
+        "Show that i^4 = 1 and find i^25"
+      ],
+      "correctAnswer": "Solve: (1/(x-2)) - (1/(x+2)) = 4/(x^2 - 4)"
+    },
+    {
+      "question": "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line.",
+      "options": [
+        "Prove that the sum of the binomial coefficients in the expansion of (1 + x)^n is 2^n",
+        "Express 1/(3 - 2i) in the form a + bi",
+        "Find the conjugate of z = -2 + 7i and verify z · z̄.",
+        "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line."
+      ],
+      "correctAnswer": "Solve the inequality: 2x - 3 > 5 and graph the solution set on a number line."
+    }
+  ],
+  "Statistics and Probability": [
+    {
+      "question": "Define: a) Mean, b) Median, c) Mode – with example data set.",
+      "options": [
+        "Calculate the standard deviation of: 2, 4, 6, 8, 10",
+        "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2",
+        "A number is chosen at random from 1 to 20. What is the probability it is: a) a multiple of 3 or 5, b) not a multiple of either?",
+        "Define: a) Mean, b) Median, c) Mode – with example data set."
+      ],
+      "correctAnswer": "Define: a) Mean, b) Median, c) Mode – with example data set."
+    },
+    {
+      "question": "Find the mean of the data: x: 5,10,15,20,25; f: 4,6,5,3,2",
+      "options": [
+        "If A and B are two events such that P(A) = 1/4, P(B) = 1/2, P(A ∩ B) = 1/8, find P(A ∪ B).",
+        "A card is drawn from a deck of 52 cards. Find the probability that it is: a) a heart, b) a king, c) a red queen.",
+        "Find the mean of the data: x: 5,10,15,20,25; f: 4,6,5,3,2",
+        "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5"
+      ],
+      "correctAnswer": "Find the mean of the data: x: 5,10,15,20,25; f: 4,6,5,3,2"
+    },
+    {
+      "question": "For the same data set above, find the median.",
+      "options": [
+        "A die is thrown once. What is the probability of getting: a) an even number, b) a prime number?",
+        "For the same data set above, find the median.",
+        "What is the effect on standard deviation when 5 is added to each value in the data set?",
+        "A card is drawn from a deck of 52 cards. Find the probability that it is: a) a heart, b) a king, c) a red queen."
+      ],
+      "correctAnswer": "For the same data set above, find the median."
+    },
+    {
+      "question": "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2",
+      "options": [
+        "Write any two merits of using standard deviation as a measure of dispersion.",
+        "Two coins are tossed. Write the sample space and find the probability of getting two heads.",
+        "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2",
+        "If A and B are two events such that P(A) = 1/4, P(B) = 1/2, P(A ∩ B) = 1/8, find P(A ∪ B)."
+      ],
+      "correctAnswer": "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2"
+    },
+    {
+      "question": "Define standard deviation. Write its formula for ungrouped data.",
+      "options": [
+        "A card is drawn from a deck of 52 cards. Find the probability that it is: a) a heart, b) a king, c) a red queen.",
+        "Define standard deviation. Write its formula for ungrouped data.",
+        "In a class of 30 students, 18 like Math, 12 like Science, and 5 like both. Find the probability that a student likes at least one of the two subjects.",
+        "Find the mean of the data: x: 5,10,15,20,25; f: 4,6,5,3,2"
+      ],
+      "correctAnswer": "Define standard deviation. Write its formula for ungrouped data."
+    },
+    {
+      "question": "Calculate the standard deviation of: 2, 4, 6, 8, 10",
+      "options": [
+        "Calculate the standard deviation of: 2, 4, 6, 8, 10",
+        "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5",
+        "A die is thrown once. What is the probability of getting: a) an even number, b) a prime number?",
+        "What is the effect on standard deviation when 5 is added to each value in the data set?"
+      ],
+      "correctAnswer": "Calculate the standard deviation of: 2, 4, 6, 8, 10"
+    },
+    {
+      "question": "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5",
+      "options": [
+        "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2",
+        "Calculate the standard deviation of: 2, 4, 6, 8, 10",
+        "Define classical probability with formula.",
+        "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5"
+      ],
+      "correctAnswer": "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5"
+    },
+    {
+      "question": "Explain the meaning of 'coefficient of variation' and compute it if standard deviation is 5 and mean is 25.",
+      "options": [
+        "A bag contains 4 red and 6 green balls. One ball is drawn. Find the probability that it is red.",
+        "In a class of 30 students, 18 like Math, 12 like Science, and 5 like both. Find the probability that a student likes at least one of the two subjects.",
+        "Find the variance and standard deviation of the marks: x: 50,55,60; f: 2,3,5",
+        "Explain the meaning of 'coefficient of variation' and compute it if standard deviation is 5 and mean is 25."
+      ],
+      "correctAnswer": "Explain the meaning of 'coefficient of variation' and compute it if standard deviation is 5 and mean is 25."
+    },
+    {
+      "question": "What is the effect on standard deviation when 5 is added to each value in the data set?",
+      "options": [
+        "Find the mean of the data: x: 5,10,15,20,25; f: 4,6,5,3,2",
+        "Find the mode of the following frequency distribution: x: 1,2,3,4,5; f: 2,5,8,5,2",
+        "For the same data set above, find the median.",
+        "What is the effect on standard deviation when 5 is added to each value in the data set?"
+      ],
+      "correctAnswer": "What is the effect on standard deviation when 5 is added to each value in the data set?"
+    },
+    {
+      "question": "Write any two merits of using standard deviation as a measure of dispersion.",
+      "options": [
+        "Write any two merits of using standard deviation as a measure of dispersion.",
+        "Define: a) Mean, b) Median, c) Mode – with example data set.",
+        "A number is chosen at random from 1 to 20. What is the probability it is: a) a multiple of 3 or 5, b) not a multiple of either?",
+        "Explain the meaning of 'coefficient of variation' and compute it if standard deviation is 5 and mean is 25."
+      ],
+      "correctAnswer": "Write any two merits of using standard deviation as a measure of dispersion."
+    }
+  ],
+  "Calculus": [
+    {
+      "question": "Define: a) Limit of a function, b) Right-hand limit, c) Left-hand limit",
+      "options": [
+        "Differentiate f(x) = x^2 · ln x",
+        "Define: a) Limit of a function, b) Right-hand limit, c) Left-hand limit",
+        "Show that lim(x→a)((x^n - a^n)/(x - a)) = na^(n-1) for natural number n.",
+        "Find the slope of the tangent to the curve y = x^2 + 2x + 3 at x = 1"
+      ],
+      "correctAnswer": "Define: a) Limit of a function, b) Right-hand limit, c) Left-hand limit"
+    },
+    {
+      "question": "Evaluate: lim(x→2)(x^2 + 3x + 2)",
+      "options": [
+        "Find d/dx(sin x + cos x)",
+        "Using first principle, find the derivative of f(x) = x^2.",
+        "Define: a) Limit of a function, b) Right-hand limit, c) Left-hand limit",
+        "Evaluate: lim(x→2)(x^2 + 3x + 2)"
+      ],
+      "correctAnswer": "Evaluate: lim(x→2)(x^2 + 3x + 2)"
+    },
+    {
+      "question": "Find: lim(x→0)(sin x / x)",
+      "options": [
+        "Using first principle, find the derivative of f(x) = x^2.",
+        "Find d/dx(sin x + cos x)",
+        "Find: lim(x→∞)((3x^2 + 2)/(5x^2 + 1))",
+        "Find: lim(x→0)(sin x / x)"
+      ],
+      "correctAnswer": "Find: lim(x→0)(sin x / x)"
+    },
+    {
+      "question": "Evaluate: lim(x→1)((x^2 - 1)/(x - 1))",
+      "options": [
+        "Evaluate: lim(x→1)((x^2 - 1)/(x - 1))",
+        "Find: lim(x→0)(sin x / x)",
+        "Differentiate f(x) = ln(x^2 + 1)",
+        "If f(x) = (x^2 + 1)/x, find f'(x)"
+      ],
+      "correctAnswer": "Evaluate: lim(x→1)((x^2 - 1)/(x - 1))"
+    },
+    {
+      "question": "Find: lim(x→∞)((3x^2 + 2)/(5x^2 + 1))",
+      "options": [
+        "Find: lim(x→∞)((3x^2 + 2)/(5x^2 + 1))",
+        "Using first principle, find the derivative of f(x) = x^2.",
+        "Show that derivative of tan x is sec^2 x",
+        "Evaluate: lim(x→1)((x^2 - 1)/(x - 1))"
+      ],
+      "correctAnswer": "Find: lim(x→∞)((3x^2 + 2)/(5x^2 + 1))"
+    },
+    {
+      "question": "If f(x) = (x^2 - 9)/(x - 3), find lim(x→3) f(x).",
+      "options": [
+        "Differentiate f(x) = ln(x^2 + 1)",
+        "Find the slope of the tangent to the curve y = x^2 + 2x + 3 at x = 1",
+        "Show that lim(x→a)((x^n - a^n)/(x - a)) = na^(n-1) for natural number n.",
+        "If f(x) = (x^2 - 9)/(x - 3), find lim(x→3) f(x)."
+      ],
+      "correctAnswer": "If f(x) = (x^2 - 9)/(x - 3), find lim(x→3) f(x)."
+    },
+    {
+      "question": "State the standard limits: a) lim(x→0)(tan x / x), b) lim(x→0)((1 - cos x)/x^2)",
+      "options": [
+        "Find d/dx(sin x + cos x)",
+        "Find the slope of the tangent to the curve y = x^2 + 2x + 3 at x = 1",
+        "State the standard limits: a) lim(x→0)(tan x / x), b) lim(x→0)((1 - cos x)/x^2)",
+        "Using first principle, find the derivative of f(x) = x^2."
+      ],
+      "correctAnswer": "State the standard limits: a) lim(x→0)(tan x / x), b) lim(x→0)((1 - cos x)/x^2)"
+    },
+    {
+      "question": "Show that lim(x→a)((x^n - a^n)/(x - a)) = na^(n-1) for natural number n.",
+      "options": [
+        "Show that lim(x→a)((x^n - a^n)/(x - a)) = na^(n-1) for natural number n.",
+        "Differentiate f(x) = x^2 · ln x",
+        "If y = 1/(x^2 + 1), find dy/dx",
+        "Evaluate: lim(x→1)((x^2 - 1)/(x - 1))"
+      ],
+      "correctAnswer": "Show that lim(x→a)((x^n - a^n)/(x - a)) = na^(n-1) for natural number n."
+    },
+    {
+      "question": "Define derivative using first principle.",
+      "options": [
+        "If y = 1/(x^2 + 1), find dy/dx",
+        "Define derivative using first principle.",
+        "Show that derivative of tan x is sec^2 x",
+        "State the standard limits: a) lim(x→0)(tan x / x), b) lim(x→0)((1 - cos x)/x^2)"
+      ],
+      "correctAnswer": "Define derivative using first principle."
+    },
+    {
+      "question": "Using first principle, find the derivative of f(x) = x^2.",
+      "options": [
+        "If y = 1/(x^2 + 1), find dy/dx",
+        "Find: lim(x→∞)((3x^2 + 2)/(5x^2 + 1))",
+        "Using first principle, find the derivative of f(x) = x^2.",
+        "State the standard limits: a) lim(x→0)(tan x / x), b) lim(x→0)((1 - cos x)/x^2)"
+      ],
+      "correctAnswer": "Using first principle, find the derivative of f(x) = x^2."
+    }
+  ]
+}

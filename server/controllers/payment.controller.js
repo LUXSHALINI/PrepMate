@@ -1,79 +1,60 @@
-import Stripe from 'stripe';
-import mongoose from 'mongoose';
-import User from '../models/user.model.js';
-import Payment from '../models/payment.model.js'; // You should export this from your schema file
+import stripe from '../utils/stripe.js';
+import ChapterPayment from '../models/payment.model.js';
 
-const stripe =new Stripe(process.env.STRIPE_SECRET_KEY);
+export const createStripeSession = async (req, res) => {
+  const { chapterId } = req.body;
+  const userId = req.user.id;  // use `id`, not `_id`
 
-// ✅ Create Payment Session
-export const initiatePayment = async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [{
         price_data: {
-          currency: 'usd',
-          product_data: { name: 'PrepMate Subscription' },
-          unit_amount: 500 * 100, // $5.00
+          currency: 'inr',
+          product_data: {
+            name: 'Unlock Chapter Exam',
+          },
+          unit_amount: 4900, 
         },
-        quantity: 1
+        quantity: 1,
       }],
       mode: 'payment',
-      success_url: `${process.env.CLIENT_URL}/success`,
-      cancel_url: `${process.env.CLIENT_URL}/cancel`,
-      metadata: {
-        userId: req.user.id
-      }
+      success_url: `http://localhost:5173/payment-success?session_id={CHECKOUT_SESSION_ID}&chapterId=${chapterId}`,
+      cancel_url: `http://localhost:5173/payment-failed`,
     });
 
-    // Optional: Save pending payment in DB
-    await Payment.create({
-      userId: req.user.id,
-      amount: 500,
-      currency: 'usd',
-      provider: 'stripe',
-      paymentIntentId: session.id,
-      status: 'pending'
+    // Save session
+    await ChapterPayment.create({
+      userId,
+      chapterId,
+      sessionId: session.id,
+      paid: false,
     });
 
-    res.status(200).json({ url: session.url });
+    res.json({ id: session.id });
   } catch (err) {
-    res.status(500).json({ msg: 'Payment initiation failed', error: err.message });
+    console.error('Stripe error:', err);
+    res.status(500).json({ error: 'Failed to create payment session' });
   }
 };
 
-// ✅ Stripe Webhook
-export const stripeWebhook = async (req, res) => {
-  const sig = req.headers['stripe-signature'];
-  let event;
+export const confirmPayment = async (req, res) => {
+  const { session_id, chapterId } = req.query;
 
   try {
-    event = stripe.webhooks.constructEvent(
-      req.body,
-      sig,
-      process.env.STRIPE_WEBHOOK_SECRET
-    );
-  } catch (err) {
-    return res.status(400).send(`Webhook Error: ${err.message}`);
-  }
+    const session = await stripe.checkout.sessions.retrieve(session_id);
 
-  if (event.type === 'checkout.session.completed') {
-    const session = event.data.object;
-    const userId = session.metadata.userId;
-
-    //  Update payment record
-    await Payment.findOneAndUpdate(
-      { paymentIntentId: session.id },
-      { status: 'success' }
-    );
-
-    // Update user subscription status
-    const user = await User.findById(userId);
-    if (user) {
-      user.subscriptionStatus = 'paid';
-      await user.save();
+    if (session.payment_status === 'paid') {
+      await ChapterPayment.findOneAndUpdate(
+        { sessionId: session_id, chapterId },
+        { paid: true }
+      );
+      res.status(200).json({ success: true });
+    } else {
+      res.status(400).json({ success: false });
     }
+  } catch (err) {
+    res.status(500).json({ error: 'Confirmation failed' });
   }
-
-  res.status(200).json({ received: true });
 };
+
