@@ -5,7 +5,7 @@ import AdminSidebar from '../components/Adminsidebar';
 const AllChaptersAdminPage = () => {
   const [chapters, setChapters] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [editingChapter, setEditingChapter] = useState(null); // chapter being edited
+  const [editingChapter, setEditingChapter] = useState(null); 
   const [updatedChapterName, setUpdatedChapterName] = useState('');
 
   useEffect(() => {

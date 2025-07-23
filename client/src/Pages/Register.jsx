@@ -1,11 +1,10 @@
-// src/pages/Register.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-// import { useAuth } from '../context/AuthContext';  // <-- Correct import
+// import { useAuth } from '../context/AuthContext';
 
 const Register = () => {
-  const { login } = useAuth();  // useAuth hook usage
+  // const { login } = useAuth(); // Fix: Call useAuth() with ()
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -38,7 +37,7 @@ const Register = () => {
 
       if (res.status === 201) {
         const userData = res.data; 
-        login(userData);  // Update auth state on login
+        // login(userData); 
 
         if (formData.role === 'admin') {
           navigate('/admin-dashboard');
@@ -70,7 +69,7 @@ const Register = () => {
           🎓 PrepMate Registration
         </h2>
         <p className="text-gray-600 text-center text-sm mb-6">
-          Start your free 15-day journey to smarter studying!
+          {/* Start your free 15-day journey to smarter studying! */}
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5">

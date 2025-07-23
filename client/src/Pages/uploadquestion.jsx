@@ -1,4 +1,4 @@
-// src/pages/UploadQuestions.jsx
+
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import AdminSidebar from '../components/Adminsidebar';
@@ -33,12 +33,12 @@ const UploadQuestions = () => {
         },
       });
 
-      setMessage('✅File uploaded successfully!');
+      setMessage('File uploaded successfully!');
       setFile(null);
       setSubject('');
       fileInputRef.current.value = '';
     } catch (err) {
-      setMessage('❌ Upload failed: ' + (err.response?.data?.message || err.message));
+      setMessage(' Upload failed: ' + (err.response?.data?.message || err.message));
     }
   };
 

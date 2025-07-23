@@ -16,10 +16,6 @@ const Sidebar = () => {
         <NavLink to="/mysubjects" className={linkClasses}>
           📚 My Subjects
         </NavLink>
-       
-        {/* <NavLink to="/editprofile" className={linkClasses}>
-          ⚙️ Edit Profile
-        </NavLink> */}
       </nav>
     </aside>
   );

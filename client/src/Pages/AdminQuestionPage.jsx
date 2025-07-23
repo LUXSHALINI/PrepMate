@@ -6,10 +6,9 @@ const AdminChapters = () => {
   const [subject, setSubject] = useState('');
   const [chapters, setChapters] = useState([]);
   const [newChapter, setNewChapter] = useState({ chapter: '', questions: [] });
-  const [editingChapter, setEditingChapter] = useState(null); // For edit mode
+  const [editingChapter, setEditingChapter] = useState(null); 
   const fileInputRef = useRef();
 
-  // Fetch chapters when subject changes
   const fetchChapters = async () => {
     if (!subject.trim()) {
       setChapters([]);
@@ -28,9 +27,8 @@ const AdminChapters = () => {
     fetchChapters();
   }, [subject]);
 
-  // Upload JSON file with chapters/questions
   const handleUpload = async () => {
-    const selectedFile = fileInputRef.current?.files?.[0]; // ✅ Safely get file
+    const selectedFile = fileInputRef.current?.files?.[0]; 
   
     if (!selectedFile || !subject.trim()) {
       alert("Please select a JSON file and enter a subject.");
@@ -38,7 +36,7 @@ const AdminChapters = () => {
     }
   
     const formData = new FormData();
-    formData.append('file', selectedFile); // ✅ use selectedFile instead of undefined 'file'
+    formData.append('file', selectedFile); 
     formData.append('subject', subject);
   
     try {
@@ -52,14 +50,13 @@ const AdminChapters = () => {
         }
       );
       alert('✅ Upload successful!');
-      fetchChapters(); // Refresh the chapter list
+      fetchChapters(); 
     } catch (error) {
       console.error('Upload failed:', error);
       alert('❌ Upload failed');
     }
   };
   
-  // Create new chapter
   const handleCreate = async () => {
     if (!subject.trim() || !newChapter.chapter.trim()) {
       return alert('Subject and chapter name are required');

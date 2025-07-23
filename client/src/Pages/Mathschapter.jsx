@@ -1,4 +1,4 @@
-// src/pages/MathChapters.jsx
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sidebar from '../components/Sidebar';
@@ -40,7 +40,6 @@ const MathChapters = () => {
       }
     };
 
-    // Load attempts and scores from localStorage
     const savedAttempts = JSON.parse(localStorage.getItem('mathAttempts') || '{}');
     const savedScores = JSON.parse(localStorage.getItem('mathScores') || '{}');
     setAttempts(savedAttempts);
@@ -102,8 +101,7 @@ const MathChapters = () => {
 
       const { id } = res.data;
       await stripe.redirectToCheckout({ sessionId: id });
-      // Redirect to Stripe Checkout
-      // const result = await stripe.redirectToCheckout({ sessionId });
+    
      
       if (result.error) {
         console.error('Stripe checkout error:', result.error.message);
@@ -123,7 +121,7 @@ const MathChapters = () => {
       if (answers[q._id] === q.correctAnswer) sc++;
     });
 
-    setScore(sc); // out of 10
+    setScore(sc); 
     setSubmitted(true);
 
     const updatedAttempts = {
@@ -140,10 +138,9 @@ const MathChapters = () => {
     localStorage.setItem('mathAttempts', JSON.stringify(updatedAttempts));
     localStorage.setItem('mathScores', JSON.stringify(updatedScores));
 
-    // ✅ Convert score to 100 scale
+ 
     const scaledScore = (sc / totalQuestions) * 100;
 
-    // 🔁 Sync to backend
     try {
       const token = localStorage.getItem('auth_token');
       await axios.post(
@@ -151,7 +148,7 @@ const MathChapters = () => {
         {
           subject: 'Mathematics',
           chapter: selectedChapter.chapter,
-          score: Math.round(scaledScore), // round to nearest whole number
+          score: Math.round(scaledScore), 
           attemptNumber: updatedAttempts[selectedChapter._id],
           paid: false,
         },
@@ -161,9 +158,9 @@ const MathChapters = () => {
           },
         }
       );
-      console.log('✅ Attempt saved to backend with score:', Math.round(scaledScore));
+      console.log(' Attempt saved to backend with score:', Math.round(scaledScore));
     } catch (err) {
-      console.error('❌ Failed to sync attempt:', err.response?.data || err.message);
+      console.error(' Failed to sync attempt:', err.response?.data || err.message);
     }
 
   };

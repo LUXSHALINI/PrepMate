@@ -41,7 +41,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="bg-white rounded-2xl h-60 md:h-100 shadow-xl flex items-center justify-center overflow-hidden">
+        <div className="bg-white rounded-xl h-60 md:h-100 shadow-xl flex items-center justify-center overflow-hidden">
         <img src={home} alt="Home" className="h-full object-cover rounded-2xl" />
 
         </div>
@@ -53,7 +53,7 @@ const Home = () => {
       <ExperiencePrepMate />
 
       {/* CTA Section */}
-      <div className="text-center mt-16 mb-12">
+      {/* <div className="text-center mt-16 mb-12">
         <h3 className="text-3xl font-semibold mb-4">Ready to Elevate Your Learning?</h3>
         <p className="mb-6 text-white/90 max-w-xl mx-auto">
           Join thousands of students who are already leveling up their education.
@@ -65,7 +65,7 @@ const Home = () => {
         >
           Sign Up For Free Trial
         </button>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <Footer />

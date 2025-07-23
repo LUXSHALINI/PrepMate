@@ -15,6 +15,8 @@ const menuItems = [
   { name: "Add Questions", path: "/admin/add-question", icon: <FaPlus /> },
   { name: "Add Subjects", path: "/admin/subjects", icon: <FaChartBar /> },
   { name: "Chapters", path: "/admin/chapters", icon: <FaLifeRing /> },
+  { name: "Details", path: "/admin/details", icon: <FaLifeRing /> },
+
 ];
 
 const Sidebar = () => {

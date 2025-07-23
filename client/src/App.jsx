@@ -6,7 +6,6 @@ import Dashboard from './Pages/Dashboard';
 import Login from './Pages/Login';
 import StudentRegister from './Pages/StudentRegister';
 import TrialConfirmation from './Pages/TrialConfirmation'; 
-import FreeTrialSignup from './Pages/FreeTrialSignup';
 import Register from './Pages/Register';
 import MySubjects from './Pages/MySubjects';
 import AdminDashboard from './Pages/Admindashboard';
@@ -19,9 +18,14 @@ import ProgressPage from "./Pages/ProgressPage";
 import UploadQuestions from './Pages/uploadquestion';
 import AllChaptersAdminPage from './Pages/AllChaptersAdminPage';
 import ScienceChapters from './Pages/scienceChapter';
-// import ScienceProgress from './Pages/scienceprogress';
+import UserOnboardingForm from './Pages/UserOnboardingForm';
+// import UserDashboard from './Pages/UserDashboard';
+import AdminDetails from './Pages/Admindetails';
+
+
 
 function App() {
+  
   return (
     <Router>
       <Header /> 
@@ -31,30 +35,23 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/studentregister" element={<StudentRegister />} />
-        <Route path="/signup-trial" element={<FreeTrialSignup />} />
         <Route path="/trial-success" element={<TrialConfirmation />} />
-
-        
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/mysubjects" element={<MySubjects />} />
-        {/* <Route path="/admin/questions" element={<AdminQuestionPage />} /> */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/admin/user-management" element={<UserManagementPage />} />
-        {/* <Route path="/admin/add-question" element={<AdminQuestionModal />} /> */}
-
-        <Route path="/questions" element={<UserQuestionPage />} />
-       
+        <Route path="/questions" element={<UserQuestionPage />} /> 
         <Route path="/math-chapters" element={<MathsChapters />} />
         <Route path="/science-chapters" element={<ScienceChapters />} />
-
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/progress" element={<ProgressPage />} />
         <Route path="/admin/add-question" element={<UploadQuestions />} />
         <Route path="/admin/subjects" element={<AdminQuestionPage />} />
         <Route path="/admin/chapters" element={<AllChaptersAdminPage />} />
-
-      </Routes>
-    </Router>
+        <Route path="/onboarding" element={<UserOnboardingForm />} />
+        <Route path="/admin/details" element={<AdminDetails />} />
+    </Routes>
+         </Router>
   );
 }
 

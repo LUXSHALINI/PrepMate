@@ -23,7 +23,6 @@ const ProgressPage = () => {
 
       const data = await res.json();
 
-      // location.state.subject இருந்தால் அதன் படி filter பண்ணு, இல்லையெனில் Math default
       const subject = location.state?.subject || "Mathematics";
       const filteredReport = data.progressReport?.filter(
         (item) => item.subject === subject
